@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>香港一手新盘销控中心</title>
+  <!-- 引入 Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- 引入自定义样式 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 SheetJS 用于在线解析 Excel -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <!-- 背景环境光效果 -->
+  <div class="glow-bg">
+    <div class="glow-circle circle-1"></div>
+    <div class="glow-circle circle-2"></div>
+  </div>
+
+  <div class="container">
+    <!-- 页头 -->
+    <header class="app-header">
+      <div class="logo-area">
+        <h1>香港一手新盘销控中心</h1>
+        <p class="subtitle">实时抓取 • 全局检索 • 楼栋销控可视化网格预览</p>
+      </div>
+      <div class="update-badge" id="lastUpdatedBadge">数据载入中...</div>
+    </header>
+
+    <!-- 全局统计仪表盘 -->
+    <section class="dashboard-stats" id="globalStats">
+      <div class="stat-card">
+        <div class="stat-value" id="statProjects">-</div>
+        <div class="stat-label">收录项目</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="statUnits">-</div>
+        <div class="stat-label">总规划套数</div>
+      </div>
+      <div class="stat-card highlight-sold">
+        <div class="stat-value" id="statSoldRate">-%</div>
+        <div class="stat-label">整体去化率 (已售占比)</div>
+      </div>
+      <div class="stat-card highlight-sale">
+        <div class="stat-value" id="statOnSale">-</div>
+        <div class="stat-label">全港在售单位</div>
+      </div>
+    </section>
+
+    <!-- 搜索与筛选面板 -->
+    <section class="filter-panel">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="输入项目名称、商圈拼音或关键字进行搜索...">
+      </div>
+
+      <div class="filter-controls">
+        <div class="btn-group" id="regionFilter">
+          <button class="filter-btn active" data-region="all">全部区域</button>
+          <button class="filter-btn" data-region="港岛">港岛</button>
+          <button class="filter-btn" data-region="九龙">九龙</button>
+        </div>
+
+        <div class="select-wrapper">
+          <select id="districtSelect">
+            <option value="all">所有商圈</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目卡片网格列表 -->
+    <main class="project-grid" id="projectGrid">
+      <!-- 骨架屏加载状态 -->
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+    </main>
+  </div>
+
+  <!-- 在线预览模态弹窗 (Modal) -->
+  <div class="modal-overlay" id="previewModal">
+    <div class="modal-container">
+      <header class="modal-header">
+        <div class="modal-title-area">
+          <h2 id="modalProjectTitle">项目名称</h2>
+          <p id="modalProjectSubtitle">港岛 - 港岛区 - 销控图</p>
+        </div>
+        <button class="close-btn" id="closeModalBtn" aria-label="关闭弹窗">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="modal-content">
+        <!-- 楼栋切换 Tab 栏 -->
+        <div class="building-tabs-wrapper">
+          <div class="building-tabs" id="buildingTabs">
+            <!-- 楼栋按钮动态生成 -->
+          </div>
+        </div>
+
+        <!-- 楼栋内部去化统计面板 -->
+        <div class="building-stats-panel" id="buildingStatsPanel">
+          <div class="building-stat-item status-total">
+            <span class="dot"></span>
+            <span class="label">总套数:</span>
+            <span class="val" id="bStatTotal">-</span>
+          </div>
+          <div class="building-stat-item status-sale">
+            <span class="dot"></span>
+            <span class="label">在售:</span>
+            <span class="val" id="bStatSale">-</span>
+          </div>
+          <div class="building-stat-item status-priced">
+            <span class="dot"></span>
+            <span class="label">已定价未售:</span>
+            <span class="val" id="bStatPriced">-</span>
+          </div>
+          <div class="building-stat-item status-sold">
+            <span class="dot"></span>
+            <span class="label">已售:</span>
+            <span class="val" id="bStatSold">-</span>
+          </div>
+          <div class="building-stat-item status-stopped">
+            <span class="dot"></span>
+            <span class="label">暂停销售:</span>
+            <span class="val" id="bStatStopped">-</span>
+          </div>
+        </div>
+
+        <!-- 网格图缩放/平移操作提示 -->
+        <div class="grid-tip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tip-icon">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+          </svg>
+          小提示：若屏幕尺寸较小，可左右拖拽/双指缩放网格图查看完整楼栋
+        </div>
+
+        <!-- 销控矩阵渲染区 -->
+        <div class="grid-render-area" id="gridRenderArea">
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>正在解析 Excel 楼栋数据，请稍候...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 引入交互 JS -->
+  <script src="app.js"></script>
+</body>
+</html>
