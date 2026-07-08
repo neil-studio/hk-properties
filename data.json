@@ -1,13 +1,13 @@
 {
   "global_stats": {
-    "total_projects": 155,
-    "total_units": 51701,
-    "total_sold": 39214,
-    "total_sale": 2471,
+    "total_projects": 154,
+    "total_units": 51683,
+    "total_sold": 39198,
+    "total_sale": 2469,
     "total_priced": 770,
     "total_stopped": 624,
     "total_pending": 8622,
-    "last_updated": "2026-07-08 15:12:51",
+    "last_updated": "2026-07-08 15:17:49",
     "overall_sold_rate": 75.8
   },
   "projects": [
@@ -212,23 +212,6 @@
         "stopped": 1,
         "pending": 61,
         "sold_rate": 82.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "助寓",
-      "region": "九龙",
-      "district": "何文田",
-      "filename": "九龙-何文田-助寓.xlsx",
-      "file_size_kb": 7.8,
-      "stats": {
-        "total": 18,
-        "sold": 16,
-        "sale": 2,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 88.9
       },
       "last_updated": "2026-07-08"
     },
