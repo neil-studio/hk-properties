@@ -7,7 +7,7 @@
     "total_priced": 770,
     "total_stopped": 626,
     "total_pending": 8676,
-    "last_updated": "2026-07-08 16:42:21",
+    "last_updated": "2026-07-08 16:57:07",
     "overall_sold_rate": 75.8
   },
   "projects": [
@@ -2753,7 +2753,7 @@
       "region": "港岛",
       "district": "黄泥涌",
       "filename": "港岛-黄泥涌-蓝塘道23-39号.xlsx",
-      "file_size_kb": 23.0,
+      "file_size_kb": 7.9,
       "stats": {
         "total": 18,
         "sold": 15,
