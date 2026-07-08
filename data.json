@@ -1,14 +1,14 @@
 {
   "global_stats": {
-    "total_projects": 190,
-    "total_units": 60314,
-    "total_sold": 47827,
+    "total_projects": 155,
+    "total_units": 51701,
+    "total_sold": 39214,
     "total_sale": 2471,
     "total_priced": 770,
     "total_stopped": 624,
     "total_pending": 8622,
-    "last_updated": "2026-07-08 15:08:49",
-    "overall_sold_rate": 79.3
+    "last_updated": "2026-07-08 15:12:51",
+    "overall_sold_rate": 75.8
   },
   "projects": [
     {
@@ -110,23 +110,6 @@
         "stopped": 0,
         "pending": 12,
         "sold_rate": 80.3
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "隽睿",
-      "region": "九龙",
-      "district": "九龙塘",
-      "filename": "九龙-九龙塘-隽睿.xlsx",
-      "file_size_kb": 11.5,
-      "stats": {
-        "total": 60,
-        "sold": 60,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -352,23 +335,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "瑜一第IB期",
-      "region": "九龙",
-      "district": "何文田",
-      "filename": "九龙-何文田-瑜一第IB期.xlsx",
-      "file_size_kb": 19.1,
-      "stats": {
-        "total": 183,
-        "sold": 183,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "瑜一第IC期",
       "region": "九龙",
       "district": "何文田",
@@ -484,23 +450,6 @@
         "stopped": 2,
         "pending": 299,
         "sold_rate": 41.7
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Grande Monaco",
-      "region": "九龙",
-      "district": "启德",
-      "filename": "九龙-启德-Grande Monaco.xlsx",
-      "file_size_kb": 27.0,
-      "stats": {
-        "total": 247,
-        "sold": 247,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -862,23 +811,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "焕然壹居",
-      "region": "九龙",
-      "district": "启德",
-      "filename": "九龙-启德-焕然壹居.xlsx",
-      "file_size_kb": 37.8,
-      "stats": {
-        "total": 484,
-        "sold": 484,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "维港1号",
       "region": "九龙",
       "district": "启德",
@@ -1066,23 +998,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "凯柏峰 III",
-      "region": "九龙",
-      "district": "将军澳",
-      "filename": "九龙-将军澳-凯柏峰 III.xlsx",
-      "file_size_kb": 46.2,
-      "stats": {
-        "total": 644,
-        "sold": 644,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "海瑅湾 I",
       "region": "九龙",
       "district": "将军澳",
@@ -1117,57 +1032,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "瑜意",
-      "region": "九龙",
-      "district": "尖沙咀",
-      "filename": "九龙-尖沙咀-瑜意.xlsx",
-      "file_size_kb": 16.8,
-      "stats": {
-        "total": 164,
-        "sold": 164,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "瑧尔",
-      "region": "九龙",
-      "district": "尖沙咀",
-      "filename": "九龙-尖沙咀-瑧尔.xlsx",
-      "file_size_kb": 10.5,
-      "stats": {
-        "total": 63,
-        "sold": 63,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "瑧玥",
-      "region": "九龙",
-      "district": "尖沙咀",
-      "filename": "九龙-尖沙咀-瑧玥.xlsx",
-      "file_size_kb": 10.4,
-      "stats": {
-        "total": 64,
-        "sold": 64,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "荟淳",
       "region": "九龙",
       "district": "慈云山、钻石山及新蒲岗",
@@ -1181,40 +1045,6 @@
         "stopped": 0,
         "pending": 14,
         "sold_rate": 51.3
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "荟鸣",
-      "region": "九龙",
-      "district": "慈云山、钻石山及新蒲岗",
-      "filename": "九龙-慈云山、钻石山及新蒲岗-荟鸣.xlsx",
-      "file_size_kb": 19.4,
-      "stats": {
-        "total": 230,
-        "sold": 230,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Elize Park",
-      "region": "九龙",
-      "district": "旺角",
-      "filename": "九龙-旺角-Elize Park.xlsx",
-      "file_size_kb": 9.9,
-      "stats": {
-        "total": 52,
-        "sold": 52,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -1270,23 +1100,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "利奥坊．壹隅",
-      "region": "九龙",
-      "district": "旺角",
-      "filename": "九龙-旺角-利奥坊．壹隅.xlsx",
-      "file_size_kb": 44.0,
-      "stats": {
-        "total": 614,
-        "sold": 614,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "利奥坊．曦岸",
       "region": "九龙",
       "district": "旺角",
@@ -1304,23 +1117,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "利奥坊．首隅",
-      "region": "九龙",
-      "district": "旺角",
-      "filename": "九龙-旺角-利奥坊．首隅.xlsx",
-      "file_size_kb": 21.0,
-      "stats": {
-        "total": 234,
-        "sold": 234,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "映居",
       "region": "九龙",
       "district": "旺角",
@@ -1334,23 +1130,6 @@
         "stopped": 0,
         "pending": 0,
         "sold_rate": 87.7
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "隽荟",
-      "region": "九龙",
-      "district": "旺角",
-      "filename": "九龙-旺角-隽荟.xlsx",
-      "file_size_kb": 13.8,
-      "stats": {
-        "total": 120,
-        "sold": 120,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -1436,23 +1215,6 @@
         "stopped": 0,
         "pending": 0,
         "sold_rate": 56.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Baker Circle．Greenwich",
-      "region": "九龙",
-      "district": "红磡",
-      "filename": "九龙-红磡-Baker Circle．Greenwich.xlsx",
-      "file_size_kb": 24.5,
-      "stats": {
-        "total": 278,
-        "sold": 278,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -1661,57 +1423,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "KOKO ROSSO",
-      "region": "九龙",
-      "district": "茶果岭、油塘及鲤鱼门",
-      "filename": "九龙-茶果岭、油塘及鲤鱼门-KOKO ROSSO.xlsx",
-      "file_size_kb": 30.4,
-      "stats": {
-        "total": 392,
-        "sold": 392,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "亲海駅I",
-      "region": "九龙",
-      "district": "茶果岭、油塘及鲤鱼门",
-      "filename": "九龙-茶果岭、油塘及鲤鱼门-亲海駅I.xlsx",
-      "file_size_kb": 19.6,
-      "stats": {
-        "total": 228,
-        "sold": 228,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "亲海駅II",
-      "region": "九龙",
-      "district": "茶果岭、油塘及鲤鱼门",
-      "filename": "九龙-茶果岭、油塘及鲤鱼门-亲海駅II.xlsx",
-      "file_size_kb": 48.1,
-      "stats": {
-        "total": 658,
-        "sold": 658,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "朗誉",
       "region": "九龙",
       "district": "茶果岭、油塘及鲤鱼门",
@@ -1814,23 +1525,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "维港滙 II",
-      "region": "九龙",
-      "district": "西南九龙",
-      "filename": "九龙-西南九龙-维港滙 II.xlsx",
-      "file_size_kb": 44.6,
-      "stats": {
-        "total": 525,
-        "sold": 525,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "维港滙 III",
       "region": "九龙",
       "district": "西南九龙",
@@ -1844,57 +1538,6 @@
         "stopped": 0,
         "pending": 0,
         "sold_rate": 99.2
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Bal Residence",
-      "region": "九龙",
-      "district": "观塘南部",
-      "filename": "九龙-观塘南部-Bal Residence.xlsx",
-      "file_size_kb": 15.8,
-      "stats": {
-        "total": 156,
-        "sold": 156,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Belgravia Place 第1期",
-      "region": "九龙",
-      "district": "长沙湾",
-      "filename": "九龙-长沙湾-Belgravia Place 第1期.xlsx",
-      "file_size_kb": 51.4,
-      "stats": {
-        "total": 714,
-        "sold": 714,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Belgravia Place 第2期",
-      "region": "九龙",
-      "district": "长沙湾",
-      "filename": "九龙-长沙湾-Belgravia Place 第2期.xlsx",
-      "file_size_kb": 21.5,
-      "stats": {
-        "total": 248,
-        "sold": 248,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -1950,23 +1593,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "恒珀",
-      "region": "九龙",
-      "district": "长沙湾",
-      "filename": "九龙-长沙湾-恒珀.xlsx",
-      "file_size_kb": 9.2,
-      "stats": {
-        "total": 42,
-        "sold": 42,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "映筑",
       "region": "九龙",
       "district": "长沙湾",
@@ -1980,40 +1606,6 @@
         "stopped": 0,
         "pending": 6,
         "sold_rate": 84.3
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "晓柏峰",
-      "region": "九龙",
-      "district": "长沙湾",
-      "filename": "九龙-长沙湾-晓柏峰.xlsx",
-      "file_size_kb": 36.9,
-      "stats": {
-        "total": 492,
-        "sold": 492,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "睿峰",
-      "region": "九龙",
-      "district": "长沙湾",
-      "filename": "九龙-长沙湾-睿峰.xlsx",
-      "file_size_kb": 32.4,
-      "stats": {
-        "total": 414,
-        "sold": 414,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -2133,23 +1725,6 @@
         "stopped": 0,
         "pending": 9,
         "sold_rate": 89.1
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "珑碧",
-      "region": "九龙",
-      "district": "马头角",
-      "filename": "九龙-马头角-珑碧.xlsx",
-      "file_size_kb": 17.3,
-      "stats": {
-        "total": 190,
-        "sold": 190,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -2290,23 +1865,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "皇都",
-      "region": "港岛",
-      "district": "北角",
-      "filename": "港岛-北角-皇都.xlsx",
-      "file_size_kb": 30.2,
-      "stats": {
-        "total": 388,
-        "sold": 388,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "雅盈峰",
       "region": "港岛",
       "district": "半山",
@@ -2371,23 +1929,6 @@
         "stopped": 0,
         "pending": 0,
         "sold_rate": 85.9
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "the MVP",
-      "region": "港岛",
-      "district": "半山区西部",
-      "filename": "港岛-半山区西部-the MVP.xlsx",
-      "file_size_kb": 13.8,
-      "stats": {
-        "total": 117,
-        "sold": 117,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -2647,40 +2188,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "Eight Star Street",
-      "region": "港岛",
-      "district": "湾仔",
-      "filename": "港岛-湾仔-Eight Star Street.xlsx",
-      "file_size_kb": 9.2,
-      "stats": {
-        "total": 37,
-        "sold": 37,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Spring Garden",
-      "region": "港岛",
-      "district": "湾仔",
-      "filename": "港岛-湾仔-Spring Garden.xlsx",
-      "file_size_kb": 11.7,
-      "stats": {
-        "total": 88,
-        "sold": 88,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "Woodis",
       "region": "港岛",
       "district": "湾仔",
@@ -2694,23 +2201,6 @@
         "stopped": 0,
         "pending": 57,
         "sold_rate": 62.9
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "坚尼地道33号",
-      "region": "港岛",
-      "district": "湾仔",
-      "filename": "港岛-湾仔-坚尼地道33号.xlsx",
-      "file_size_kb": 11.1,
-      "stats": {
-        "total": 71,
-        "sold": 71,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -2766,23 +2256,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "碧丽轩",
-      "region": "港岛",
-      "district": "薄扶林",
-      "filename": "港岛-薄扶林-碧丽轩.xlsx",
-      "file_size_kb": 7.9,
-      "stats": {
-        "total": 16,
-        "sold": 16,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "15 Western Street",
       "region": "港岛",
       "district": "西营盘及上环",
@@ -2813,23 +2286,6 @@
         "stopped": 0,
         "pending": 0,
         "sold_rate": 84.6
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "半山名滙",
-      "region": "港岛",
-      "district": "西营盘及上环",
-      "filename": "港岛-西营盘及上环-半山名滙.xlsx",
-      "file_size_kb": 13.1,
-      "stats": {
-        "total": 111,
-        "sold": 111,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -2915,23 +2371,6 @@
         "stopped": 0,
         "pending": 0,
         "sold_rate": 98.6
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "Coasto",
-      "region": "港岛",
-      "district": "香港仔及鸭脷洲",
-      "filename": "港岛-香港仔及鸭脷洲-Coasto.xlsx",
-      "file_size_kb": 12.0,
-      "stats": {
-        "total": 93,
-        "sold": 93,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
@@ -3140,23 +2579,6 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "FINNIE",
-      "region": "港岛",
-      "district": "鲗鱼涌",
-      "filename": "港岛-鲗鱼涌-FINNIE.xlsx",
-      "file_size_kb": 12.1,
-      "stats": {
-        "total": 90,
-        "sold": 90,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
       "name": "君豪峰",
       "region": "港岛",
       "district": "鲗鱼涌",
@@ -3204,23 +2626,6 @@
         "stopped": 24,
         "pending": 91,
         "sold_rate": 16.7
-      },
-      "last_updated": "2026-07-08"
-    },
-    {
-      "name": "The Aster",
-      "region": "港岛",
-      "district": "黄泥涌",
-      "filename": "港岛-黄泥涌-The Aster.xlsx",
-      "file_size_kb": 12.9,
-      "stats": {
-        "total": 106,
-        "sold": 106,
-        "sale": 0,
-        "priced": 0,
-        "stopped": 0,
-        "pending": 0,
-        "sold_rate": 100.0
       },
       "last_updated": "2026-07-08"
     },
