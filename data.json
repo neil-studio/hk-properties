@@ -1,13 +1,13 @@
 {
   "global_stats": {
-    "total_projects": 154,
-    "total_units": 51683,
-    "total_sold": 39198,
-    "total_sale": 2469,
+    "total_projects": 155,
+    "total_units": 51701,
+    "total_sold": 39213,
+    "total_sale": 2470,
     "total_priced": 770,
     "total_stopped": 624,
-    "total_pending": 8622,
-    "last_updated": "2026-07-08 16:20:16",
+    "total_pending": 8624,
+    "last_updated": "2026-07-08 16:31:01",
     "overall_sold_rate": 75.8
   },
   "projects": [
@@ -2609,6 +2609,23 @@
         "stopped": 24,
         "pending": 91,
         "sold_rate": 16.7
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "蓝塘道23-39号",
+      "region": "港岛",
+      "district": "黄泥涌",
+      "filename": "港岛-黄泥涌-蓝塘道23-39号.xlsx",
+      "file_size_kb": 23.0,
+      "stats": {
+        "total": 18,
+        "sold": 15,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 2,
+        "sold_rate": 83.3
       },
       "last_updated": "2026-07-08"
     },
