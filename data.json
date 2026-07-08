@@ -7,7 +7,7 @@
     "total_priced": 770,
     "total_stopped": 624,
     "total_pending": 8622,
-    "last_updated": "2026-07-08 15:17:49",
+    "last_updated": "2026-07-08 16:06:32",
     "overall_sold_rate": 75.8
   },
   "projects": [
@@ -80,10 +80,10 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "博峯",
+      "name": "博峰",
       "region": "九龙",
       "district": "九龙塘",
-      "filename": "九龙-九龙塘-博峯.xlsx",
+      "filename": "九龙-九龙塘-博峰.xlsx",
       "file_size_kb": 9.7,
       "stats": {
         "total": 44,
@@ -284,10 +284,10 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "朗贤峯第IIA期",
+      "name": "朗贤峰第IIA期",
       "region": "九龙",
       "district": "何文田",
-      "filename": "九龙-何文田-朗贤峯第IIA期.xlsx",
+      "filename": "九龙-何文田-朗贤峰第IIA期.xlsx",
       "file_size_kb": 32.5,
       "stats": {
         "total": 418,
@@ -301,10 +301,10 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "朗贤峯第IIB期",
+      "name": "朗贤峰第IIB期",
       "region": "九龙",
       "district": "何文田",
-      "filename": "九龙-何文田-朗贤峯第IIB期.xlsx",
+      "filename": "九龙-何文田-朗贤峰第IIB期.xlsx",
       "file_size_kb": 44.0,
       "stats": {
         "total": 572,
@@ -1134,10 +1134,10 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "泰峯",
+      "name": "泰峰",
       "region": "九龙",
       "district": "牛头角及九龙湾",
-      "filename": "九龙-牛头角及九龙湾-泰峯.xlsx",
+      "filename": "九龙-牛头角及九龙湾-泰峰.xlsx",
       "file_size_kb": 57.3,
       "stats": {
         "total": 807,
@@ -1491,10 +1491,10 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "维港滙 I",
+      "name": "维港汇 I",
       "region": "九龙",
       "district": "西南九龙",
-      "filename": "九龙-西南九龙-维港滙 I.xlsx",
+      "filename": "九龙-西南九龙-维港汇 I.xlsx",
       "file_size_kb": 42.9,
       "stats": {
         "total": 524,
@@ -1508,10 +1508,10 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "维港滙 III",
+      "name": "维港汇 III",
       "region": "九龙",
       "district": "西南九龙",
-      "filename": "九龙-西南九龙-维港滙 III.xlsx",
+      "filename": "九龙-西南九龙-维港汇 III.xlsx",
       "file_size_kb": 33.0,
       "stats": {
         "total": 388,
@@ -1984,10 +1984,10 @@
       "last_updated": "2026-07-08"
     },
     {
-      "name": "帝滙豪庭",
+      "name": "帝汇豪庭",
       "region": "港岛",
       "district": "半山区西部",
-      "filename": "港岛-半山区西部-帝滙豪庭.xlsx",
+      "filename": "港岛-半山区西部-帝汇豪庭.xlsx",
       "file_size_kb": 11.7,
       "stats": {
         "total": 90,
