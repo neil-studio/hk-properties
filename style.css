@@ -706,10 +706,10 @@ body {
 .building-stats-panel {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  background: rgba(0, 0, 0, 0.2);
+  gap: 0.8rem;
+  background: rgba(0, 0, 0, 0.25);
   padding: 0.8rem 1.2rem;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid var(--border-color);
   font-size: 0.85rem;
 }
@@ -717,7 +717,10 @@ body {
 .building-stat-item {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .building-stat-item .dot {
@@ -728,31 +731,53 @@ body {
 }
 
 .building-stat-item .label {
-  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 .building-stat-item .val {
   font-weight: 700;
 }
 
-.status-total .dot { background-color: var(--color-pending-fg); }
-.status-total .val { color: var(--text-primary); }
+/* 楼栋去化子项高对比度专属配色 */
+.status-total {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.status-total .dot { background-color: #9ca3af; }
+.status-total .label { color: var(--text-secondary); }
+.status-total .val { color: #ffffff; }
 
-.status-sale .dot { background-color: var(--color-sale-fg); }
-.status-sale { background-color: rgba(169, 245, 169, 0.1); border-radius: 6px; padding: 0.2rem 0.5rem; }
-.status-sale .val { color: var(--color-sale-fg); }
+.status-sale {
+  background-color: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+.status-sale .dot { background-color: #4ade80; }
+.status-sale .label { color: #a7f3d0; }
+.status-sale .val { color: #4ade80; }
 
-.status-priced .dot { background-color: var(--color-priced-fg); }
-.status-priced { background-color: rgba(169, 208, 245, 0.1); border-radius: 6px; padding: 0.2rem 0.5rem; }
-.status-priced .val { color: var(--color-priced-fg); }
+.status-priced {
+  background-color: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.25);
+}
+.status-priced .dot { background-color: #60a5fa; }
+.status-priced .label { color: #bfdbfe; }
+.status-priced .val { color: #60a5fa; }
 
-.status-sold .dot { background-color: var(--color-sold-fg); }
-.status-sold { background-color: rgba(245, 169, 169, 0.1); border-radius: 6px; padding: 0.2rem 0.5rem; }
-.status-sold .val { color: var(--color-sold-fg); }
+.status-sold {
+  background-color: rgba(244, 63, 94, 0.15);
+  border-color: rgba(244, 63, 94, 0.25);
+}
+.status-sold .dot { background-color: #fca5a5; }
+.status-sold .label { color: #fecdd3; }
+.status-sold .val { color: #fca5a5; }
 
-.status-stopped .dot { background-color: var(--color-stopped-fg); }
-.status-stopped { background-color: rgba(255, 192, 0, 0.15); border-radius: 6px; padding: 0.2rem 0.5rem; }
-.status-stopped .val { color: var(--color-stopped-fg); }
+.status-stopped {
+  background-color: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+.status-stopped .dot { background-color: #f59e0b; }
+.status-stopped .label { color: #fde68a; }
+.status-stopped .val { color: #f59e0b; }
 
 .grid-tip {
   display: flex;
