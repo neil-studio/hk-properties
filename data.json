@@ -1,13 +1,13 @@
 {
   "global_stats": {
-    "total_projects": 155,
-    "total_units": 51701,
-    "total_sold": 39213,
-    "total_sale": 2470,
+    "total_projects": 163,
+    "total_units": 51816,
+    "total_sold": 39264,
+    "total_sale": 2480,
     "total_priced": 770,
-    "total_stopped": 624,
-    "total_pending": 8624,
-    "last_updated": "2026-07-08 16:31:01",
+    "total_stopped": 626,
+    "total_pending": 8676,
+    "last_updated": "2026-07-08 16:42:21",
     "overall_sold_rate": 75.8
   },
   "projects": [
@@ -1882,6 +1882,23 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "Central Peak II",
+      "region": "港岛",
+      "district": "半山区东部",
+      "filename": "港岛-半山区东部-Central Peak II.xlsx",
+      "file_size_kb": 23.6,
+      "stats": {
+        "total": 19,
+        "sold": 3,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 15,
+        "sold_rate": 15.8
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
       "name": "21 Borrett Road 第1期",
       "region": "港岛",
       "district": "半山区西部",
@@ -1895,6 +1912,23 @@
         "stopped": 0,
         "pending": 60,
         "sold_rate": 48.3
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "Mount Pokfulam",
+      "region": "港岛",
+      "district": "半山区西部",
+      "filename": "港岛-半山区西部-Mount Pokfulam.xlsx",
+      "file_size_kb": 12.4,
+      "stats": {
+        "total": 7,
+        "sold": 4,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 2,
+        "sold_rate": 57.1
       },
       "last_updated": "2026-07-08"
     },
@@ -2069,6 +2103,40 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "皇府湾",
+      "region": "港岛",
+      "district": "大潭及石澳",
+      "filename": "港岛-大潭及石澳-皇府湾.xlsx",
+      "file_size_kb": 37.5,
+      "stats": {
+        "total": 34,
+        "sold": 5,
+        "sale": 3,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 26,
+        "sold_rate": 14.7
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "寿臣山15号",
+      "region": "港岛",
+      "district": "寿臣山",
+      "filename": "港岛-寿臣山-寿臣山15号.xlsx",
+      "file_size_kb": 19.9,
+      "stats": {
+        "total": 15,
+        "sold": 11,
+        "sale": 3,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 1,
+        "sold_rate": 73.3
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
       "name": "No.3 Repulse Bay Road",
       "region": "港岛",
       "district": "寿臣山及浅水湾",
@@ -2099,6 +2167,23 @@
         "stopped": 0,
         "pending": 32,
         "sold_rate": 38.5
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "Mount Nicholson I",
+      "region": "港岛",
+      "district": "山顶区",
+      "filename": "港岛-山顶区-Mount Nicholson I.xlsx",
+      "file_size_kb": 21.8,
+      "stats": {
+        "total": 17,
+        "sold": 16,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 1,
+        "sold_rate": 94.1
       },
       "last_updated": "2026-07-08"
     },
@@ -2290,6 +2375,23 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "50 Stanley Village Road",
+      "region": "港岛",
+      "district": "赤柱",
+      "filename": "港岛-赤柱-50 Stanley Village Road.xlsx",
+      "file_size_kb": 17.1,
+      "stats": {
+        "total": 12,
+        "sold": 11,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 0,
+        "sold_rate": 91.7
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
       "name": "One stanley",
       "region": "港岛",
       "district": "赤柱",
@@ -2303,6 +2405,40 @@
         "stopped": 1,
         "pending": 9,
         "sold_rate": 64.0
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "Solace",
+      "region": "港岛",
+      "district": "赤柱",
+      "filename": "港岛-赤柱-Solace.xlsx",
+      "file_size_kb": 11.3,
+      "stats": {
+        "total": 6,
+        "sold": 1,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 2,
+        "pending": 2,
+        "sold_rate": 16.7
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "海天径 1号, 舂磡角道 44, 46, 48, 50号",
+      "region": "港岛",
+      "district": "赤柱",
+      "filename": "港岛-赤柱-海天径 1号, 舂磡角道 44, 46, 48, 50号.xlsx",
+      "file_size_kb": 10.5,
+      "stats": {
+        "total": 5,
+        "sold": 0,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 5,
+        "sold_rate": 0.0
       },
       "last_updated": "2026-07-08"
     },
