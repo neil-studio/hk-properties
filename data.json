@@ -7,7 +7,7 @@
     "total_priced": 774,
     "total_stopped": 664,
     "total_pending": 8748,
-    "last_updated": "2026-07-09 18:13:34",
+    "last_updated": "2026-07-09 18:19:47",
     "overall_sold_rate": 76.2
   },
   "projects": [
@@ -2243,7 +2243,7 @@
       "region": "港岛",
       "district": "寿臣山",
       "filename": "港岛-寿臣山-寿臣山15号.xlsx",
-      "file_size_kb": 7.8,
+      "file_size_kb": 7.9,
       "stats": {
         "total": 15,
         "sold": 11,
