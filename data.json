@@ -1,14 +1,14 @@
 {
   "global_stats": {
-    "total_projects": 171,
-    "total_units": 52073,
-    "total_sold": 39481,
-    "total_sale": 2487,
+    "total_projects": 177,
+    "total_units": 53247,
+    "total_sold": 40562,
+    "total_sale": 2499,
     "total_priced": 774,
-    "total_stopped": 633,
-    "total_pending": 8698,
-    "last_updated": "2026-07-09 13:10:09",
-    "overall_sold_rate": 75.8
+    "total_stopped": 664,
+    "total_pending": 8748,
+    "last_updated": "2026-07-09 17:52:00",
+    "overall_sold_rate": 76.2
   },
   "projects": [
     {
@@ -114,6 +114,23 @@
       "last_updated": "2026-07-09"
     },
     {
+      "name": "皇廷汇",
+      "region": "九龙",
+      "district": "九龙塘",
+      "filename": "九龙-九龙塘-皇廷汇.xlsx",
+      "file_size_kb": 6.9,
+      "stats": {
+        "total": 4,
+        "sold": 3,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 1,
+        "pending": 0,
+        "sold_rate": 75.0
+      },
+      "last_updated": "2026-07-09"
+    },
+    {
       "name": "缇外",
       "region": "九龙",
       "district": "九龙塘",
@@ -129,6 +146,23 @@
         "sold_rate": 80.3
       },
       "last_updated": "2026-07-08"
+    },
+    {
+      "name": "天玺",
+      "region": "九龙",
+      "district": "九龙站",
+      "filename": "九龙-九龙站-天玺.xlsx",
+      "file_size_kb": 61.4,
+      "stats": {
+        "total": 825,
+        "sold": 779,
+        "sale": 9,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 37,
+        "sold_rate": 94.4
+      },
+      "last_updated": "2026-07-09"
     },
     {
       "name": "高临",
@@ -383,7 +417,7 @@
         "pending": 0,
         "sold_rate": 78.6
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "芳菲",
@@ -1063,7 +1097,7 @@
         "pending": 0,
         "sold_rate": 96.5
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "荟淳",
@@ -2137,21 +2171,38 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "吉喆",
+      "region": "港岛",
+      "district": "坚尼地城及摩星岭",
+      "filename": "港岛-坚尼地城及摩星岭-吉喆.xlsx",
+      "file_size_kb": 16.8,
+      "stats": {
+        "total": 173,
+        "sold": 166,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 7,
+        "sold_rate": 96.0
+      },
+      "last_updated": "2026-07-09"
+    },
+    {
       "name": "御海园",
       "region": "港岛",
       "district": "坚尼地城及摩星岭",
       "filename": "港岛-坚尼地城及摩星岭-御海园.xlsx",
-      "file_size_kb": 8.4,
+      "file_size_kb": 9.4,
       "stats": {
-        "total": 32,
-        "sold": 13,
+        "total": 33,
+        "sold": 14,
         "sale": 0,
         "priced": 0,
         "stopped": 0,
         "pending": 19,
-        "sold_rate": 40.6
+        "sold_rate": 42.4
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "海嵎",
@@ -2192,7 +2243,7 @@
       "region": "港岛",
       "district": "寿臣山",
       "filename": "港岛-寿臣山-寿臣山15号.xlsx",
-      "file_size_kb": 19.9,
+      "file_size_kb": 7.8,
       "stats": {
         "total": 15,
         "sold": 11,
@@ -2202,7 +2253,7 @@
         "pending": 1,
         "sold_rate": 73.3
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "No.3 Repulse Bay Road",
@@ -2226,34 +2277,34 @@
       "region": "港岛",
       "district": "寿臣山及浅水湾",
       "filename": "港岛-寿臣山及浅水湾-Shouson Peak.xlsx",
-      "file_size_kb": 7.5,
+      "file_size_kb": 8.9,
       "stats": {
-        "total": 20,
-        "sold": 19,
+        "total": 31,
+        "sold": 30,
         "sale": 1,
         "priced": 0,
         "stopped": 0,
         "pending": 0,
-        "sold_rate": 95.0
+        "sold_rate": 96.8
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "浅水湾108",
       "region": "港岛",
       "district": "寿臣山及浅水湾",
       "filename": "港岛-寿臣山及浅水湾-浅水湾108.xlsx",
-      "file_size_kb": 6.1,
+      "file_size_kb": 7.0,
       "stats": {
-        "total": 3,
+        "total": 8,
         "sold": 0,
         "sale": 0,
         "priced": 0,
         "stopped": 0,
-        "pending": 3,
+        "pending": 8,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "深水湾径8号",
@@ -2311,34 +2362,34 @@
       "region": "港岛",
       "district": "山顶区",
       "filename": "港岛-山顶区-Twelve Peaks.xlsx",
-      "file_size_kb": 6.6,
+      "file_size_kb": 7.5,
       "stats": {
-        "total": 9,
-        "sold": 8,
+        "total": 12,
+        "sold": 11,
         "sale": 1,
         "priced": 0,
         "stopped": 0,
         "pending": 0,
-        "sold_rate": 88.9
+        "sold_rate": 91.7
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "宾吉道3号",
       "region": "港岛",
       "district": "山顶区",
       "filename": "港岛-山顶区-宾吉道3号.xlsx",
-      "file_size_kb": 6.2,
+      "file_size_kb": 7.1,
       "stats": {
-        "total": 3,
+        "total": 6,
         "sold": 0,
-        "sale": 2,
+        "sale": 4,
         "priced": 1,
         "stopped": 0,
-        "pending": 0,
+        "pending": 1,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "海德园第1期",
@@ -2409,6 +2460,23 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "活道1号",
+      "region": "港岛",
+      "district": "湾仔",
+      "filename": "港岛-湾仔-活道1号.xlsx",
+      "file_size_kb": 9.2,
+      "stats": {
+        "total": 42,
+        "sold": 41,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 0,
+        "sold_rate": 97.6
+      },
+      "last_updated": "2026-07-09"
+    },
+    {
       "name": "One Eighty",
       "region": "港岛",
       "district": "筲箕湾",
@@ -2441,6 +2509,23 @@
         "sold_rate": 91.7
       },
       "last_updated": "2026-07-08"
+    },
+    {
+      "name": "远晴",
+      "region": "港岛",
+      "district": "筲箕湾",
+      "filename": "港岛-筲箕湾-远晴.xlsx",
+      "file_size_kb": 12.5,
+      "stats": {
+        "total": 98,
+        "sold": 68,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 30,
+        "pending": 0,
+        "sold_rate": 69.4
+      },
+      "last_updated": "2026-07-09"
     },
     {
       "name": "Victoria Coast",
@@ -2579,6 +2664,23 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "339 Tai Hang Road",
+      "region": "港岛",
+      "district": "跑马地",
+      "filename": "港岛-跑马地-339 Tai Hang Road.xlsx",
+      "file_size_kb": 8.1,
+      "stats": {
+        "total": 9,
+        "sold": 8,
+        "sale": 0,
+        "priced": 1,
+        "stopped": 0,
+        "pending": 0,
+        "sold_rate": 88.9
+      },
+      "last_updated": "2026-07-09"
+    },
+    {
       "name": "宏丰台10号",
       "region": "港岛",
       "district": "铜锣湾",
@@ -2702,17 +2804,17 @@
       "region": "港岛",
       "district": "香港仔及鸭脷洲",
       "filename": "港岛-香港仔及鸭脷洲-扬海.xlsx",
-      "file_size_kb": 46.8,
+      "file_size_kb": 47.5,
       "stats": {
         "total": 600,
-        "sold": 588,
+        "sold": 589,
         "sale": 0,
-        "priced": 6,
+        "priced": 5,
         "stopped": 0,
         "pending": 6,
-        "sold_rate": 98.0
+        "sold_rate": 98.2
       },
-      "last_updated": "2026-07-08"
+      "last_updated": "2026-07-09"
     },
     {
       "name": "晋环",

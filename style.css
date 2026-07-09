@@ -670,8 +670,25 @@ body {
 .building-tabs-wrapper {
   overflow-x: auto;
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
+  scrollbar-width: thin; /* Firefox */
 }
+
+/* 楼栋 Tabs 滚动条美化 */
+.building-tabs-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.building-tabs-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+.building-tabs-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+.building-tabs-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 
 .building-tabs {
   display: flex;
