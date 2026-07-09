@@ -7,7 +7,7 @@
     "total_priced": 774,
     "total_stopped": 664,
     "total_pending": 8748,
-    "last_updated": "2026-07-09 17:52:00",
+    "last_updated": "2026-07-09 18:13:34",
     "overall_sold_rate": 76.2
   },
   "projects": [
@@ -118,7 +118,7 @@
       "region": "九龙",
       "district": "九龙塘",
       "filename": "九龙-九龙塘-皇廷汇.xlsx",
-      "file_size_kb": 6.9,
+      "file_size_kb": 7.0,
       "stats": {
         "total": 4,
         "sold": 3,
@@ -152,7 +152,7 @@
       "region": "九龙",
       "district": "九龙站",
       "filename": "九龙-九龙站-天玺.xlsx",
-      "file_size_kb": 61.4,
+      "file_size_kb": 64.1,
       "stats": {
         "total": 825,
         "sold": 779,
@@ -407,7 +407,7 @@
       "region": "九龙",
       "district": "何文田",
       "filename": "九龙-何文田-耀爵台.xlsx",
-      "file_size_kb": 7.5,
+      "file_size_kb": 7.6,
       "stats": {
         "total": 14,
         "sold": 11,
@@ -1087,7 +1087,7 @@
       "region": "九龙",
       "district": "尖沙咀",
       "filename": "九龙-尖沙咀-本木.xlsx",
-      "file_size_kb": 17.2,
+      "file_size_kb": 17.8,
       "stats": {
         "total": 172,
         "sold": 166,
@@ -2175,7 +2175,7 @@
       "region": "港岛",
       "district": "坚尼地城及摩星岭",
       "filename": "港岛-坚尼地城及摩星岭-吉喆.xlsx",
-      "file_size_kb": 16.8,
+      "file_size_kb": 17.6,
       "stats": {
         "total": 173,
         "sold": 166,
@@ -2192,7 +2192,7 @@
       "region": "港岛",
       "district": "坚尼地城及摩星岭",
       "filename": "港岛-坚尼地城及摩星岭-御海园.xlsx",
-      "file_size_kb": 9.4,
+      "file_size_kb": 9.5,
       "stats": {
         "total": 33,
         "sold": 14,
@@ -2277,7 +2277,7 @@
       "region": "港岛",
       "district": "寿臣山及浅水湾",
       "filename": "港岛-寿臣山及浅水湾-Shouson Peak.xlsx",
-      "file_size_kb": 8.9,
+      "file_size_kb": 9.2,
       "stats": {
         "total": 31,
         "sold": 30,
@@ -2362,7 +2362,7 @@
       "region": "港岛",
       "district": "山顶区",
       "filename": "港岛-山顶区-Twelve Peaks.xlsx",
-      "file_size_kb": 7.5,
+      "file_size_kb": 7.6,
       "stats": {
         "total": 12,
         "sold": 11,
@@ -2464,7 +2464,7 @@
       "region": "港岛",
       "district": "湾仔",
       "filename": "港岛-湾仔-活道1号.xlsx",
-      "file_size_kb": 9.2,
+      "file_size_kb": 9.4,
       "stats": {
         "total": 42,
         "sold": 41,
@@ -2515,7 +2515,7 @@
       "region": "港岛",
       "district": "筲箕湾",
       "filename": "港岛-筲箕湾-远晴.xlsx",
-      "file_size_kb": 12.5,
+      "file_size_kb": 12.7,
       "stats": {
         "total": 98,
         "sold": 68,
@@ -2668,7 +2668,7 @@
       "region": "港岛",
       "district": "跑马地",
       "filename": "港岛-跑马地-339 Tai Hang Road.xlsx",
-      "file_size_kb": 8.1,
+      "file_size_kb": 8.2,
       "stats": {
         "total": 9,
         "sold": 8,
