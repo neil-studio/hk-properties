@@ -670,8 +670,10 @@ body {
 .building-tabs-wrapper {
   overflow-x: auto;
   border-bottom: 1px solid var(--border-color);
+  padding-top: 0.2rem;
   padding-bottom: 0.8rem;
   scrollbar-width: thin; /* Firefox */
+  flex-shrink: 0;
 }
 
 /* 楼栋 Tabs 滚动条美化 */
