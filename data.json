@@ -1,13 +1,13 @@
 {
   "global_stats": {
-    "total_projects": 163,
-    "total_units": 51816,
-    "total_sold": 39264,
-    "total_sale": 2480,
-    "total_priced": 770,
-    "total_stopped": 626,
-    "total_pending": 8676,
-    "last_updated": "2026-07-08 17:01:18",
+    "total_projects": 171,
+    "total_units": 52073,
+    "total_sold": 39481,
+    "total_sale": 2487,
+    "total_priced": 774,
+    "total_stopped": 633,
+    "total_pending": 8698,
+    "last_updated": "2026-07-09 13:10:09",
     "overall_sold_rate": 75.8
   },
   "projects": [
@@ -95,6 +95,23 @@
         "sold_rate": 0.0
       },
       "last_updated": "2026-07-08"
+    },
+    {
+      "name": "喇沙汇",
+      "region": "九龙",
+      "district": "九龙塘",
+      "filename": "九龙-九龙塘-喇沙汇.xlsx",
+      "file_size_kb": 6.9,
+      "stats": {
+        "total": 4,
+        "sold": 0,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 4,
+        "pending": 0,
+        "sold_rate": 0.0
+      },
+      "last_updated": "2026-07-09"
     },
     {
       "name": "缇外",
@@ -348,6 +365,23 @@
         "stopped": 11,
         "pending": 25,
         "sold_rate": 81.7
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "耀爵台",
+      "region": "九龙",
+      "district": "何文田",
+      "filename": "九龙-何文田-耀爵台.xlsx",
+      "file_size_kb": 7.5,
+      "stats": {
+        "total": 14,
+        "sold": 11,
+        "sale": 0,
+        "priced": 3,
+        "stopped": 0,
+        "pending": 0,
+        "sold_rate": 78.6
       },
       "last_updated": "2026-07-08"
     },
@@ -1011,6 +1045,23 @@
         "stopped": 0,
         "pending": 0,
         "sold_rate": 99.8
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "本木",
+      "region": "九龙",
+      "district": "尖沙咀",
+      "filename": "九龙-尖沙咀-本木.xlsx",
+      "file_size_kb": 17.2,
+      "stats": {
+        "total": 172,
+        "sold": 166,
+        "sale": 3,
+        "priced": 0,
+        "stopped": 3,
+        "pending": 0,
+        "sold_rate": 96.5
       },
       "last_updated": "2026-07-08"
     },
@@ -2086,6 +2137,23 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "御海园",
+      "region": "港岛",
+      "district": "坚尼地城及摩星岭",
+      "filename": "港岛-坚尼地城及摩星岭-御海园.xlsx",
+      "file_size_kb": 8.4,
+      "stats": {
+        "total": 32,
+        "sold": 13,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 19,
+        "sold_rate": 40.6
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
       "name": "海嵎",
       "region": "港岛",
       "district": "坚尼地城及摩星岭",
@@ -2154,6 +2222,40 @@
       "last_updated": "2026-07-08"
     },
     {
+      "name": "Shouson Peak",
+      "region": "港岛",
+      "district": "寿臣山及浅水湾",
+      "filename": "港岛-寿臣山及浅水湾-Shouson Peak.xlsx",
+      "file_size_kb": 7.5,
+      "stats": {
+        "total": 20,
+        "sold": 19,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 0,
+        "sold_rate": 95.0
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "浅水湾108",
+      "region": "港岛",
+      "district": "寿臣山及浅水湾",
+      "filename": "港岛-寿臣山及浅水湾-浅水湾108.xlsx",
+      "file_size_kb": 6.1,
+      "stats": {
+        "total": 3,
+        "sold": 0,
+        "sale": 0,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 3,
+        "sold_rate": 0.0
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
       "name": "深水湾径8号",
       "region": "港岛",
       "district": "寿臣山及浅水湾",
@@ -2201,6 +2303,40 @@
         "stopped": 0,
         "pending": 1,
         "sold_rate": 95.8
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "Twelve Peaks",
+      "region": "港岛",
+      "district": "山顶区",
+      "filename": "港岛-山顶区-Twelve Peaks.xlsx",
+      "file_size_kb": 6.6,
+      "stats": {
+        "total": 9,
+        "sold": 8,
+        "sale": 1,
+        "priced": 0,
+        "stopped": 0,
+        "pending": 0,
+        "sold_rate": 88.9
+      },
+      "last_updated": "2026-07-08"
+    },
+    {
+      "name": "宾吉道3号",
+      "region": "港岛",
+      "district": "山顶区",
+      "filename": "港岛-山顶区-宾吉道3号.xlsx",
+      "file_size_kb": 6.2,
+      "stats": {
+        "total": 3,
+        "sold": 0,
+        "sale": 2,
+        "priced": 1,
+        "stopped": 0,
+        "pending": 0,
+        "sold_rate": 0.0
       },
       "last_updated": "2026-07-08"
     },
