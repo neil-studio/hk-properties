@@ -618,7 +618,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 安全的 SHA-256 密码哈希值（当前硬编码对应密码: "8888"）
   // 如果需要修改密码为其他值，请通过 sha256("新密码") 计算出哈希替换此处。
-  const CORRECT_HASH = '19290a6e03399cf70a92d19f56360c7b6d13264ec4008269ec264ecdf6cc447a';
+  const CORRECT_HASH = '2926a2731f4b312c08982cacf8061eb14bf65c1a87cc5d70e864e079c6220731';
 
   // 原生计算文本的 SHA-256 哈希值 (无需引入外部库)
   async function getSHA256(text) {
