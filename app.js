@@ -3,6 +3,13 @@
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 登录模块元素引用
+  const loginOverlay = document.getElementById('loginOverlay');
+  const loginCard = document.getElementById('loginCard');
+  const passwordInput = document.getElementById('passwordInput');
+  const loginBtn = document.getElementById('loginBtn');
+  const loginErrorMsg = document.getElementById('loginErrorMsg');
+
   // DOM 元素引用
   const lastUpdatedBadge = document.getElementById('lastUpdatedBadge');
   const statProjects = document.getElementById('statProjects');
@@ -605,6 +612,88 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 启动应用程序
-  init();
+  // ==========================================================================
+  // 12. 访问控制与安全校验模块 (Login & Access Control)
+  // ==========================================================================
+
+  // 安全的 SHA-256 密码哈希值（当前硬编码对应密码: "8888"）
+  // 如果需要修改密码为其他值，请通过 sha256("新密码") 计算出哈希替换此处。
+  const CORRECT_HASH = '19290a6e03399cf70a92d19f56360c7b6d13264ec4008269ec264ecdf6cc447a';
+
+  // 原生计算文本的 SHA-256 哈希值 (无需引入外部库)
+  async function getSHA256(text) {
+    const msgBuffer = new TextEncoder().encode(text);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  // 校验登录逻辑
+  async function handleLogin() {
+    const password = passwordInput.value;
+    if (!password) {
+      showLoginError('请输入密码！');
+      return;
+    }
+    
+    try {
+      const inputHash = await getSHA256(password);
+      if (inputHash === CORRECT_HASH) {
+        // 校验通过：本地持久化登录态并平滑淡出登录框
+        localStorage.setItem('hk_sales_logged_in', 'true');
+        loginOverlay.classList.add('hidden');
+        loginErrorMsg.style.display = 'none';
+        
+        // 验证通过后方可执行数据加载，确保敏感数据请求的安全隔离
+        init();
+      } else {
+        showLoginError('密码错误，请重新输入');
+      }
+    } catch (e) {
+      console.error(e);
+      showLoginError('密码验证出现异常，请重试');
+    }
+  }
+
+  // 显示报错信息并触发登录卡片物理抖动动画
+  function showLoginError(msg) {
+    loginErrorMsg.textContent = msg;
+    loginErrorMsg.style.display = 'block';
+    
+    // 触发重绘以重启 shake 关键帧动画
+    loginCard.classList.remove('shake');
+    void loginCard.offsetWidth; 
+    loginCard.classList.add('shake');
+    
+    // 聚焦并自动选中框中文字
+    passwordInput.focus();
+    passwordInput.select();
+  }
+
+  // 初始化引导控制 (登录态拦截)
+  function checkLoginStatus() {
+    if (localStorage.getItem('hk_sales_logged_in') === 'true') {
+      // 已登录状态：隐藏遮罩并加载真实数据
+      if (loginOverlay) {
+        loginOverlay.classList.add('hidden');
+      }
+      init();
+    } else {
+      // 未登录状态：绑定登录交互事件
+      if (loginBtn) {
+        loginBtn.addEventListener('click', handleLogin);
+      }
+      if (passwordInput) {
+        passwordInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            handleLogin();
+          }
+        });
+        passwordInput.focus();
+      }
+    }
+  }
+
+  // 启动应用程序生命周期 (拦截式校验)
+  checkLoginStatus();
 });
