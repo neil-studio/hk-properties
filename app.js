@@ -616,9 +616,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // 12. 访问控制与安全校验模块 (Login & Access Control)
   // ==========================================================================
 
-  // 安全的 SHA-256 密码哈希值（当前硬编码对应密码: "8888"）
+  // 安全的 SHA-256 密码哈希值（当前硬编码对应密码: "lm8888"）
   // 如果需要修改密码为其他值，请通过 sha256("新密码") 计算出哈希替换此处。
-  const CORRECT_HASH = '2926a2731f4b312c08982cacf8061eb14bf65c1a87cc5d70e864e079c6220731';
+  const CORRECT_HASH = 'e8ff64cbb018fe63ecd57e93471ad11ce81e510965b63e258f5539134cf27875';
 
   // 原生计算文本的 SHA-256 哈希值 (无需引入外部库)
   async function getSHA256(text) {
