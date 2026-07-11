@@ -798,11 +798,19 @@ body {
 .status-stopped .label { color: #fde68a; }
 .status-stopped .val { color: #f59e0b; }
 
+.grid-controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .grid-tip {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
 }
 
@@ -810,6 +818,73 @@ body {
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
+}
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.3rem;
+  gap: 0.5rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.zoom-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.zoom-btn svg {
+  width: 1rem;
+  height: 1rem;
+  stroke: var(--text-secondary);
+  transition: stroke 0.2s;
+}
+
+.zoom-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.zoom-btn:hover svg {
+  stroke: var(--text-primary);
+}
+
+.zoom-btn:active {
+  transform: scale(0.95);
+}
+
+.zoom-btn.reset-btn {
+  width: auto;
+  padding: 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.zoom-btn.reset-btn:hover {
+  color: var(--text-primary);
+}
+
+.zoom-level {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  min-width: 3.2rem;
+  text-align: center;
+  font-feature-settings: "tnum";
 }
 
 /* 销控网格图渲染大区域 */
@@ -968,5 +1043,20 @@ body {
   }
   .modal-content {
     padding: 1rem 1.2rem;
+  }
+  .grid-controls-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+  .zoom-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .zoom-btn {
+    flex-grow: 0;
+  }
+  .zoom-btn.reset-btn {
+    flex-grow: 0;
   }
 }

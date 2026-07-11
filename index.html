@@ -137,12 +137,29 @@
           </div>
         </div>
 
-        <!-- 网格图缩放/平移操作提示 -->
-        <div class="grid-tip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tip-icon">
-            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
-          </svg>
-          小提示：若屏幕尺寸较小，可左右拖拽/双指缩放网格图查看完整楼栋
+        <!-- 网格图缩放/平移操作提示与缩放控制 -->
+        <div class="grid-controls-row">
+          <div class="grid-tip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tip-icon">
+              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+            </svg>
+            <span>若屏幕尺寸较小，可左右拖拽/双指缩放网格图</span>
+          </div>
+          <div class="zoom-controls">
+            <button class="zoom-btn" id="zoomOutBtn" title="缩小">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <span class="zoom-level" id="zoomLevel">100%</span>
+            <button class="zoom-btn" id="zoomInBtn" title="放大">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <button class="zoom-btn reset-btn" id="zoomResetBtn">重置</button>
+          </div>
         </div>
 
         <!-- 销控矩阵渲染区 -->

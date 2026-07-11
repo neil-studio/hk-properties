@@ -30,12 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const bStatSold = document.getElementById('bStatSold');
   const bStatStopped = document.getElementById('bStatStopped');
 
+  // 缩放控制元素
+  const zoomOutBtn = document.getElementById('zoomOutBtn');
+  const zoomInBtn = document.getElementById('zoomInBtn');
+  const zoomResetBtn = document.getElementById('zoomResetBtn');
+  const zoomLevelLabel = document.getElementById('zoomLevel');
+
   // 全局数据状态
   let allProjects = [];
   let globalStats = {};
   let activeRegion = 'all';
   let activeDistrict = 'all';
   let searchQuery = '';
+  let currentZoom = 1.0;
 
   // 1. 初始化，获取数据索引
   async function init() {
@@ -157,6 +164,28 @@ document.addEventListener('DOMContentLoaded', () => {
         closePreviewModal();
       }
     });
+
+    // 缩放控制按钮事件
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', () => {
+        applyZoom(currentZoom - 0.1);
+      });
+    }
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', () => {
+        applyZoom(currentZoom + 0.1);
+      });
+    }
+    if (zoomResetBtn) {
+      zoomResetBtn.addEventListener('click', () => {
+        applyZoom(1.0);
+      });
+    }
+
+    // 销控网格大区绑定双指捏合手势
+    if (gridRenderArea) {
+      setupTouchZoom(gridRenderArea);
+    }
   }
 
   // 5. 渲染项目列表
@@ -494,6 +523,86 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     table.appendChild(tbody);
     gridRenderArea.appendChild(table);
+
+    // 每次渲染新楼栋时，均初始化缩放比例为 100%
+    applyZoom(1.0);
+  }
+
+  // 10. 应用缩放值并处理浏览器兼容性
+  function applyZoom(scale) {
+    // 限制缩放区间在 40% - 200% 之间
+    currentZoom = Math.min(Math.max(scale, 0.4), 2.0);
+    
+    if (zoomLevelLabel) {
+      zoomLevelLabel.textContent = `${Math.round(currentZoom * 100)}%`;
+    }
+    
+    const table = gridRenderArea.querySelector('.excel-grid-table');
+    if (table) {
+      if ('zoom' in table.style) {
+        // 主流移动端浏览器 (Safari, Chrome, 微信等) 均原生支持高能效的 zoom 属性
+        table.style.zoom = currentZoom;
+        table.style.transform = '';
+        table.style.transformOrigin = '';
+        table.style.marginRight = '';
+        table.style.marginBottom = '';
+      } else {
+        // 对不支持 zoom 的浏览器 (如 Firefox) 采用 transform: scale 缩放，并用 margin 抵消布局空白
+        table.style.transform = `scale(${currentZoom})`;
+        table.style.transformOrigin = 'top left';
+        
+        table.style.marginRight = '';
+        table.style.marginBottom = '';
+        
+        if (currentZoom < 1.0) {
+          const widthDiff = table.offsetWidth * (1 - currentZoom);
+          const heightDiff = table.offsetHeight * (1 - currentZoom);
+          table.style.marginRight = `-${widthDiff}px`;
+          table.style.marginBottom = `-${heightDiff}px`;
+        } else if (currentZoom > 1.0) {
+          const widthDiff = table.offsetWidth * (currentZoom - 1);
+          const heightDiff = table.offsetHeight * (currentZoom - 1);
+          table.style.marginRight = `${widthDiff}px`;
+          table.style.marginBottom = `${heightDiff}px`;
+        }
+      }
+    }
+  }
+
+  // 11. 双指捏合手势缩放核心算法
+  function setupTouchZoom(element) {
+    let initialDistance = 0;
+    let initialZoom = 1.0;
+    
+    element.addEventListener('touchstart', (e) => {
+      // 仅在双指触碰时启动缩放逻辑
+      if (e.touches.length === 2) {
+        e.preventDefault(); // 阻止浏览器缩放全屏
+        initialDistance = Math.hypot(
+          e.touches[0].pageX - e.touches[1].pageX,
+          e.touches[0].pageY - e.touches[1].pageY
+        );
+        initialZoom = currentZoom;
+      }
+    }, { passive: false });
+    
+    element.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 2 && initialDistance > 0) {
+        e.preventDefault(); // 阻止原生手势引起的冲突
+        const currentDistance = Math.hypot(
+          e.touches[0].pageX - e.touches[1].pageX,
+          e.touches[0].pageY - e.touches[1].pageY
+        );
+        const factor = currentDistance / initialDistance;
+        applyZoom(initialZoom * factor);
+      }
+    }, { passive: false });
+    
+    element.addEventListener('touchend', (e) => {
+      if (e.touches.length < 2) {
+        initialDistance = 0;
+      }
+    });
   }
 
   // 启动应用程序
