@@ -7,7 +7,7 @@
     "total_priced": 786,
     "total_stopped": 650,
     "total_pending": 8721,
-    "last_updated": "2026-07-14 19:02:17",
+    "last_updated": "2026-07-14 19:21:16",
     "overall_sold_rate": 76.2
   },
   "projects": [
@@ -645,7 +645,7 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-The Henley III.xlsx",
-      "file_size_kb": 39.1,
+      "file_size_kb": 39.0,
       "stats": {
         "total": 404,
         "sold": 296,
