@@ -2,12 +2,12 @@
   "global_stats": {
     "total_projects": 177,
     "total_units": 53288,
-    "total_sold": 40592,
-    "total_sale": 2495,
+    "total_sold": 40595,
+    "total_sale": 2492,
     "total_priced": 775,
     "total_stopped": 665,
     "total_pending": 8761,
-    "last_updated": "2026-07-10 14:50:38",
+    "last_updated": "2026-07-14 16:38:58",
     "overall_sold_rate": 76.2
   },
   "projects": [
@@ -254,7 +254,7 @@
       "region": "九龙",
       "district": "何文田",
       "filename": "九龙-何文田-傲玟.xlsx",
-      "file_size_kb": 37.5,
+      "file_size_kb": 37.8,
       "stats": {
         "total": 401,
         "sold": 329,
@@ -2855,17 +2855,17 @@
       "region": "港岛",
       "district": "香港仔及鸭脷洲",
       "filename": "港岛-香港仔及鸭脷洲-海盈山第4B期.xlsx",
-      "file_size_kb": 26.7,
+      "file_size_kb": 32.4,
       "stats": {
         "total": 368,
-        "sold": 79,
-        "sale": 52,
+        "sold": 82,
+        "sale": 49,
         "priced": 0,
         "stopped": 0,
         "pending": 237,
-        "sold_rate": 21.5
+        "sold_rate": 22.3
       },
-      "last_updated": "2026-07-10"
+      "last_updated": "2026-07-14"
     },
     {
       "name": "滶晨 II",

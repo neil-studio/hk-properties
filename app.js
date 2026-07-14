@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const buildingTabs = document.getElementById('buildingTabs');
   const gridRenderArea = document.getElementById('gridRenderArea');
   
+  // 模态框页签与卖点面板 DOM
+  const modalNavTabs = document.getElementById('modalNavTabs');
+  const modalNavButtons = document.querySelectorAll('.modal-nav-btn');
+  const modalPanes = document.querySelectorAll('.modal-pane');
+  const infoBasic = document.getElementById('infoBasic');
+  const infoSelling = document.getElementById('infoSelling');
+  const infoMainland = document.getElementById('infoMainland');
+  
   // 楼栋统计元素
   const bStatTotal = document.getElementById('bStatTotal');
   const bStatSale = document.getElementById('bStatSale');
@@ -49,6 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeRegion = 'all';
   let activeDistrict = 'all';
   let searchQuery = '';
+  let activeGrade = 'all'; // 新增评级快捷过滤状态
+  let activePriceRange = 'all'; // 新增精选价位段过滤状态
+  let currentPreviewProject = ''; // 新增：全局缓存当前查看的项目名以用于匹配户型图
+  let activePinnedRoom = ''; // 新增：全局缓存当前点击锁定的房间号
+  let activePinnedUnitKey = null; // 新增：全局缓存当前点击锁定的单元Key
+  let featuredByPriceData = {}; // 缓存各价位段精选项目
   let currentZoom = 1.0;
 
   // 1. 初始化，获取数据索引
@@ -61,6 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await response.json();
       allProjects = data.projects || [];
       globalStats = data.global_stats || {};
+      
+      // 缓存多价位精选数据
+      featuredByPriceData = data.featured_by_price || {
+        "1000-2000": [],
+        "2000-5000": [],
+        "5000-10000": [],
+        "10000+": []
+      };
+
+      // 渲染今日聚焦（3个）与精选推荐大屏区
+      renderPromotions(data.focus_projects, featuredByPriceData);
       
       // 更新大屏统计数据
       updateDashboard();
@@ -193,6 +218,46 @@ document.addEventListener('DOMContentLoaded', () => {
     if (gridRenderArea) {
       setupTouchZoom(gridRenderArea);
     }
+
+    // 模态框内部页签 pane 切换
+    modalNavButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalNavButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const targetPaneId = btn.dataset.pane;
+        modalPanes.forEach(pane => {
+          if (pane.id === targetPaneId) {
+            pane.classList.add('active');
+          } else {
+            pane.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // 新增：评级快捷过滤按钮事件监听
+    const gradeFilterButtons = document.querySelectorAll('#gradeFilter .filter-btn');
+    gradeFilterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        gradeFilterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeGrade = btn.dataset.grade;
+        renderProjects();
+      });
+    });
+
+    // 新增：精选价格段 Tab 切换事件监听
+    const priceTabButtons = document.querySelectorAll('.price-tab-btn');
+    priceTabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        priceTabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activePriceRange = btn.dataset.price;
+        // 即时重绘右侧精选轮播
+        updateFeaturedCarousel();
+      });
+    });
   }
 
   // 5. 渲染项目列表
@@ -205,7 +270,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (activeRegion !== 'all' && proj.region !== activeRegion) return false;
       // 2. 商圈过滤
       if (activeDistrict !== 'all' && proj.district !== activeDistrict) return false;
-      // 3. 搜索框过滤（匹配名称、区域、商圈）
+      // 3. 评级筛选
+      if (activeGrade !== 'all' && proj.grade !== activeGrade) return false;
+      // 4. 搜索框过滤（匹配名称、区域、商圈）
       if (searchQuery) {
         const matchesName = proj.name.toLowerCase().includes(searchQuery);
         const matchesRegion = proj.region.toLowerCase().includes(searchQuery);
@@ -213,6 +280,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!matchesName && !matchesRegion && !matchesDistrict) return false;
       }
       return true;
+    });
+
+    // 按照 聚焦盘 > 精选盘 > 其他盘 排序
+    filtered.sort((a, b) => {
+      const getPriority = (p) => {
+        if (p.is_focus) return 1;
+        if (p.is_featured) return 2;
+        return 3;
+      };
+      return getPriority(a) - getPriority(b);
     });
 
     if (filtered.length === 0) {
@@ -223,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
           <h3>无匹配楼盘</h3>
-          <p>请尝试其他搜索词或切换区域分类</p>
+          <p>请尝试其他搜索词或切换区域分类与评级</p>
         </div>
       `;
       return;
@@ -236,7 +313,14 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const stats = proj.stats || { total: 0, sold: 0, sale: 0, priced: 0, stopped: 0, pending: 0, sold_rate: 0 };
       
+      // 确定徽章等级样式类
+      let gradeClass = 'grade-c';
+      if (proj.grade === 'A+') gradeClass = 'grade-aplus';
+      else if (proj.grade === 'A') gradeClass = 'grade-a';
+      else if (proj.grade === 'B') gradeClass = 'grade-b';
+
       card.innerHTML = `
+        <div class="grade-badge ${gradeClass}">${proj.grade || 'C'}</div>
         <div class="card-header">
           <div class="card-meta">
             <span class="badge badge-region">${proj.region}</span>
@@ -313,8 +397,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. 打开在线预览 Modal 弹窗
   function openPreviewModal(filename, projectName, region, district) {
-    modalProjectTitle.textContent = projectName;
+    // 缓存当前预览的项目名
+    currentPreviewProject = projectName;
+    activePinnedRoom = ''; // 重置锁定房间
+    
+    // 重置户型图画板状态
+    const floorplanTargetLabel = document.getElementById('floorplanTargetLabel');
+    const floorplanPlaceholder = document.getElementById('floorplanPlaceholder');
+    const floorplanImg = document.getElementById('floorplanImg');
+    if (floorplanTargetLabel) floorplanTargetLabel.textContent = '请悬停或点击单元格';
+    if (floorplanPlaceholder) floorplanPlaceholder.style.display = 'flex';
+    if (floorplanImg) {
+      floorplanImg.style.display = 'none';
+      floorplanImg.src = '';
+    }
+
+    // 1. 判断是否有评级并展示评级徽章
+    const proj = allProjects.find(p => p.name === projectName);
+    const grade = (proj && proj.grade) || 'C';
+    let modalGradeClass = 'modal-grade-c';
+    if (grade === 'A+') modalGradeClass = 'modal-grade-aplus';
+    else if (grade === 'A') modalGradeClass = 'modal-grade-a';
+    else if (grade === 'B') modalGradeClass = 'modal-grade-b';
+
+    modalProjectTitle.innerHTML = `${projectName} <span class="modal-grade-badge ${modalGradeClass}">${grade}</span>`;
     modalProjectSubtitle.textContent = `${region} • ${district} • 销控数据预览`;
+    
+    // 2. 检查项目是否有录入任何介绍或卖点说明
+    const hasInfo = proj && (proj.basic_info || proj.selling_points || proj.mainland_selling_points);
+    
+    if (hasInfo) {
+      // 填充卖点卡片内容
+      infoBasic.textContent = proj.basic_info || '暂无基础资料介绍';
+      infoSelling.textContent = proj.selling_points || '暂无核心卖点介绍';
+      infoMainland.textContent = proj.mainland_selling_points || '暂无内地客群卖点介绍';
+      
+      // 显示大 Tab 导航栏，并默认激活第一个（网格图）
+      modalNavTabs.style.display = 'flex';
+      modalNavButtons.forEach(b => {
+        if (b.dataset.pane === 'paneGrid') b.classList.add('active');
+        else b.classList.remove('active');
+      });
+      modalPanes.forEach(p => {
+        if (p.id === 'paneGrid') p.classList.add('active');
+        else p.classList.remove('active');
+      });
+    } else {
+      // 没有卖点说明，隐藏大 Tab 导航栏，并直接展示网格图
+      modalNavTabs.style.display = 'none';
+      modalPanes.forEach(p => {
+        if (p.id === 'paneGrid') p.classList.add('active');
+        else p.classList.remove('active');
+      });
+    }
     
     // 清空旧数据，展示 Loading Spinner
     buildingTabs.innerHTML = '';
@@ -333,10 +468,137 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchExcelAndRender(`files/${filename}`);
   }
 
+  // 6.5 渲染今日聚焦（3个）与精选楼盘专区
+  function renderPromotions(focusProjectNames, featuredByPrice) {
+    const promotionArea = document.getElementById('promotionArea');
+    const featuredCarousel = document.getElementById('featuredCarousel');
+
+    const focusList = focusProjectNames || [];
+    const hasFocus = focusList.filter(v => v).length > 0;
+    
+    // 计算精选总数
+    let totalFeatured = 0;
+    Object.values(featuredByPrice || {}).forEach(list => totalFeatured += list.length);
+    const hasFeatured = totalFeatured > 0;
+
+    // 若均无推荐项目，则彻底隐藏推荐专区
+    if (!hasFocus && !hasFeatured) {
+      promotionArea.style.display = 'none';
+      return;
+    }
+
+    promotionArea.style.display = 'grid';
+
+    // 1. 依次渲染左侧的 3 张今日聚焦卡片
+    for (let i = 1; i <= 3; i++) {
+      const cardEl = document.getElementById(`promoFocusCard${i}`);
+      const name = focusList[i - 1];
+
+      if (name) {
+        const focusProj = allProjects.find(p => p.name === name);
+        if (focusProj) {
+          cardEl.style.display = 'flex';
+          
+          cardEl.querySelector('.promo-focus-title').textContent = focusProj.name;
+          cardEl.querySelector('.promo-region').textContent = focusProj.region;
+          cardEl.querySelector('.promo-district').textContent = focusProj.district;
+          
+          const descText = focusProj.selling_points || focusProj.mainland_selling_points || focusProj.basic_info || '主推今日聚焦盘，位置极其优越，点击下方按钮查看可视化销控网格图。';
+          cardEl.querySelector('.promo-focus-desc').textContent = descText;
+          
+          const stats = focusProj.stats || { total: 0, sold: 0, sale: 0, priced: 0, stopped: 0, pending: 0, sold_rate: 0 };
+          cardEl.querySelector('.promo-rate').textContent = `${stats.sold_rate}%`;
+          cardEl.querySelector('.promo-units').textContent = stats.total.toLocaleString();
+
+          // 重新绑定按钮事件
+          const btn = cardEl.querySelector('.promo-btn');
+          const newBtn = btn.cloneNode(true);
+          btn.parentNode.replaceChild(newBtn, btn);
+          
+          newBtn.addEventListener('click', () => {
+            openPreviewModal(focusProj.filename, focusProj.name, focusProj.region, focusProj.district);
+          });
+        } else {
+          cardEl.style.display = 'none';
+        }
+      } else {
+        cardEl.style.display = 'none';
+      }
+    }
+
+    // 2. 渲染右侧精选价格段选项卡
+    updateFeaturedCarousel();
+  }
+
+  // 6.6 渲染精选推荐价格切换轮播
+  function updateFeaturedCarousel() {
+    const featuredCarousel = document.getElementById('featuredCarousel');
+    featuredCarousel.innerHTML = '';
+
+    // 1. 根据当前 activePriceRange 筛选出要展示的楼盘名字列表
+    let targets = [];
+    if (activePriceRange === 'all') {
+      // 合并四个区间
+      const set = new Set();
+      Object.values(featuredByPriceData).forEach(list => {
+        list.forEach(name => set.add(name));
+      });
+      targets = Array.from(set);
+    } else {
+      targets = featuredByPriceData[activePriceRange] || [];
+    }
+
+    if (targets.length === 0) {
+      featuredCarousel.innerHTML = '<div style="color:var(--text-secondary); font-size:0.8rem; padding: 2rem; width:100%; text-align:center;">该价格区间暂无精选盘</div>';
+      return;
+    }
+
+    // 2. 依次渲染精选盘
+    targets.forEach(name => {
+      const featProj = allProjects.find(p => p.name === name);
+      if (featProj) {
+        const card = document.createElement('div');
+        card.className = 'featured-card';
+        
+        const stats = featProj.stats || { total: 0, sold: 0, sale: 0, priced: 0, stopped: 0, pending: 0, sold_rate: 0 };
+        
+        card.innerHTML = `
+          <div class="feat-card-header">
+            <span class="feat-badge">精选推荐</span>
+            <h4 class="feat-card-title">${featProj.name}</h4>
+          </div>
+          <div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.3rem;">
+              整体去化率：<strong>${stats.sold_rate}%</strong>
+            </div>
+            <div class="feat-card-meta">
+              <span>${featProj.region} • ${featProj.district}</span>
+              <span>规划${stats.total}套</span>
+            </div>
+          </div>
+        `;
+        
+        // 绑定点击事件
+        card.addEventListener('click', () => {
+          openPreviewModal(featProj.filename, featProj.name, featProj.region, featProj.district);
+        });
+        
+        featuredCarousel.appendChild(card);
+      }
+    });
+  }
+
   // 7. 关闭模态弹窗
   function closePreviewModal() {
     previewModal.classList.remove('open');
     document.body.style.overflow = '';
+    
+    // 关闭时重置悬浮折扣面板
+    activePinnedUnitKey = null;
+    const card = document.getElementById('selectedUnitCard');
+    if (card) {
+      card.classList.remove('active');
+    }
   }
 
   // 重置楼栋统计仪表板
@@ -360,6 +622,44 @@ document.addEventListener('DOMContentLoaded', () => {
       // 使用 SheetJS 解析 Excel
       const workbook = XLSX.read(arrayBuffer, { type: 'array' });
       
+      // 1. 解析“销控汇总明细”表并建立单位详情全局字典
+      const detailSheet = workbook.Sheets["销控汇总明细"];
+      window.projectUnitsDetail = {};
+      activePinnedUnitKey = null; // 重置锁定状态
+      if (detailSheet) {
+        const detailRows = XLSX.utils.sheet_to_json(detailSheet, { range: 1, defval: "" });
+        detailRows.forEach(row => {
+          const bname = String(row["楼栋"] || '').trim();
+          const floor = String(row["楼层"] || '').trim();
+          const flat = String(row["房号"] || '').trim();
+          if (bname && floor && flat) {
+            const key = `${bname.replace(/\s+/g, '')}_${floor}_${flat}`;
+            window.projectUnitsDetail[key] = {
+              origPrice: row["总价 (港币)"],
+              origFtPrice: row["实用呎价 (港币/呎)"],
+              discount: row["最高折扣"],
+              discPrice: row["折实总价 (港币)"],
+              discFtPrice: row["折实呎价 (港币/呎)"],
+              payment: row["付款办法"],
+              isTender: row["是否招标"] === '是',
+              status: row["销控状态"]
+            };
+          }
+        });
+      }
+
+      // 重置卡片展示
+      const card = document.getElementById('selectedUnitCard');
+      if (card) {
+        card.classList.remove('active');
+        const placeholder = card.querySelector('.selected-unit-placeholder');
+        const detail = card.querySelector('.selected-unit-detail');
+        if (placeholder && detail) {
+          placeholder.style.display = '';
+          detail.style.display = 'none';
+        }
+      }
+      
       // 过滤出除了"销控汇总明细"以外的所有 Tab 页（代表各楼栋）
       const sheetNames = workbook.SheetNames.filter(name => name !== "销控汇总明细");
       
@@ -379,14 +679,14 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
           buildingTabs.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-          renderSheetGrid(workbook.Sheets[sheetName]);
+          renderSheetGrid(workbook.Sheets[sheetName], sheetName);
         });
         
         buildingTabs.appendChild(btn);
       });
       
       // 默认渲染第一个楼栋网格
-      renderSheetGrid(workbook.Sheets[sheetNames[0]]);
+      renderSheetGrid(workbook.Sheets[sheetNames[0]], sheetNames[0]);
       
     } catch (error) {
       console.error(error);
@@ -405,7 +705,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 9. 渲染具体的楼栋网格图 HTML 结构
-  function renderSheetGrid(sheet) {
+  function renderSheetGrid(sheet, buildingName) {
     gridRenderArea.innerHTML = '';
     
     // 转换为 2D 数组（保留空值以便定位格子）
@@ -523,6 +823,31 @@ document.addEventListener('DOMContentLoaded', () => {
             // 已售状态 (XX年-XX月)
             td.className = 'status-sold-cell';
           }
+
+          // 提取房号信息，供联动渲染平面图 (解析第一行 "A | 343呎" 或 "B (开放式)")
+          const lines = cellVal.split('\n');
+          let roomName = "";
+          if (lines.length > 0) {
+            const firstLine = lines[0];
+            if (firstLine.includes('|')) {
+              roomName = firstLine.split('|')[0].trim();
+            } else {
+              const m = firstLine.match(/([A-Z0-9\-]+)/);
+              if (m) roomName = m[1];
+            }
+          }
+
+          // 联动交互绑定
+          if (roomName) {
+            td.addEventListener('mouseenter', () => {
+              updateFloorplanPanel(roomName, buildingName, false);
+              updateSelectedUnitCard(roomName, tdFloor.textContent.trim(), buildingName, false);
+            });
+            td.addEventListener('click', () => {
+              updateFloorplanPanel(roomName, buildingName, true);
+              updateSelectedUnitCard(roomName, tdFloor.textContent.trim(), buildingName, true);
+            });
+          }
         }
         tr.appendChild(td);
       }
@@ -533,6 +858,235 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 每次渲染新楼栋时，均初始化缩放比例为 100%
     applyZoom(1.0);
+  }
+
+  // 9.5 联动大画板渲染户型图
+  function updateFloorplanPanel(roomName, buildingName, isClick = false) {
+    if (!roomName || !currentPreviewProject) return;
+
+    const floorplanTargetLabel = document.getElementById('floorplanTargetLabel');
+    const floorplanPlaceholder = document.getElementById('floorplanPlaceholder');
+    const floorplanImg = document.getElementById('floorplanImg');
+
+    if (!floorplanTargetLabel || !floorplanPlaceholder || !floorplanImg) return;
+
+    if (isClick) {
+      activePinnedRoom = `${buildingName}_${roomName}`;
+    } else {
+      // 如果已点击锁定，并且悬停的不是锁定的房号，则不予覆盖
+      if (activePinnedRoom && activePinnedRoom !== `${buildingName}_${roomName}`) {
+        return;
+      }
+    }
+
+    const cleanBuilding = buildingName ? buildingName.replace(' 销控表', '').replace(' 销控网格', '').trim() : '';
+    floorplanTargetLabel.textContent = `${cleanBuilding} • ${roomName}单位 ${isClick ? '📌' : ''}`;
+
+    // 拼装本地图片相对路径
+    // 优先：images/floorplans/{项目名}/{楼栋}_{房号}.jpg
+    const pathWithBuilding = `images/floorplans/${currentPreviewProject}/${cleanBuilding}_${roomName}.jpg`;
+    // 兜底：images/floorplans/{项目名}/{房号}.jpg
+    const pathRoomOnly = `images/floorplans/${currentPreviewProject}/${roomName}.jpg`;
+
+    // 异步虚拟图片预加载检测，防止发生裂图
+    const tempImg = new Image();
+    tempImg.src = pathWithBuilding;
+    
+    tempImg.onload = () => {
+      floorplanPlaceholder.style.display = 'none';
+      floorplanImg.style.display = 'block';
+      floorplanImg.src = pathWithBuilding;
+    };
+    
+    tempImg.onerror = () => {
+      const tempImg2 = new Image();
+      tempImg2.src = pathRoomOnly;
+      
+      tempImg2.onload = () => {
+        floorplanPlaceholder.style.display = 'none';
+        floorplanImg.style.display = 'block';
+        floorplanImg.src = pathRoomOnly;
+      };
+      
+      tempImg2.onerror = () => {
+        floorplanImg.style.display = 'none';
+        floorplanPlaceholder.style.display = 'flex';
+        const pTag = floorplanPlaceholder.querySelector('p');
+        if (pTag) {
+          pTag.textContent = `该单位 (${cleanBuilding} ${roomName}室) 暂未上线平面户型图`;
+        }
+      };
+    };
+  }
+
+  // 9.55 联动数据详情大画板，实时计算最惠折扣与折实价
+  function updateSelectedUnitCard(flat, floor, buildingName, isClick = false) {
+    const cleanBname = buildingName.replace(' 销控表', '').replace(' 销控网格', '').trim();
+    const key = `${cleanBname.replace(/\s+/g, '')}_${String(floor).trim()}_${String(flat).trim()}`;
+    const card = document.getElementById('selectedUnitCard');
+    if (!card) return;
+    
+    const placeholder = card.querySelector('.selected-unit-placeholder');
+    const detail = card.querySelector('.selected-unit-detail');
+    if (!placeholder || !detail) return;
+    
+
+    if (isClick) {
+      activePinnedUnitKey = key;
+    } else {
+      if (activePinnedUnitKey && activePinnedUnitKey !== key) {
+        return;
+      }
+    }
+    
+    const u = window.projectUnitsDetail ? window.projectUnitsDetail[key] : null;
+    
+    if (!u) {
+      placeholder.style.display = '';
+      detail.style.display = 'none';
+      card.classList.remove('active');
+      return;
+    }
+    
+    placeholder.style.display = '';
+    detail.style.display = 'flex';
+    card.classList.add('active');
+    
+    document.getElementById('selectedUnitName').textContent = `${cleanBname} • ${floor}楼 ${flat}室 ${isClick ? '📌' : ''}`;
+    
+    const statusBadge = document.getElementById('selectedUnitStatus');
+    statusBadge.textContent = u.status || '待售';
+    statusBadge.className = 'unit-status-badge'; 
+    
+    let statusClass = 'status-pending';
+    if (u.status === '在售') statusClass = 'status-sale';
+    else if (u.status === '已定价未售') statusClass = 'status-priced';
+    else if (u.status === '已售') statusClass = 'status-sold';
+    else if (u.status === '暂停销售') statusClass = 'status-stopped';
+    statusBadge.classList.add(statusClass);
+    
+    const origPriceCont = document.getElementById('selectedUnitOrigPriceContainer');
+    const discPriceCont = document.getElementById('selectedUnitDiscPriceContainer');
+    const discountBadge = document.getElementById('selectedUnitDiscountBadge');
+    const origFtPriceCont = document.getElementById('selectedUnitOrigFtPriceContainer');
+    const discFtPriceCont = document.getElementById('selectedUnitDiscFtPriceContainer');
+    const paymentCont = document.getElementById('selectedUnitPaymentContainer');
+    
+    const formatMoney = (val) => {
+      if (!val || isNaN(val)) return val;
+      return '$' + Number(val).toLocaleString('zh-HK');
+    };
+    
+    if (u.status === '已售') {
+      origPriceCont.style.display = 'none';
+      discPriceCont.style.display = 'flex';
+      discPriceCont.querySelector('.price-label').textContent = '成交:';
+      document.getElementById('selectedUnitDiscPrice').textContent = formatMoney(u.discPrice);
+      
+      discountBadge.style.display = 'none';
+      
+      origFtPriceCont.style.display = 'none';
+      discFtPriceCont.style.display = 'flex';
+      discFtPriceCont.querySelector('.price-label').textContent = '成交呎:';
+      document.getElementById('selectedUnitDiscFtPrice').textContent = formatMoney(u.discFtPrice) + '/呎';
+      
+      paymentCont.style.display = 'none';
+    } 
+    else if (u.isTender && u.status !== '已售') {
+      origPriceCont.style.display = 'none';
+      discPriceCont.style.display = 'flex';
+      discPriceCont.querySelector('.price-label').textContent = '发售:';
+      document.getElementById('selectedUnitDiscPrice').textContent = '招标发售';
+      
+      discountBadge.style.display = 'none';
+      origFtPriceCont.style.display = 'none';
+      discFtPriceCont.style.display = 'none';
+      
+      paymentCont.style.display = 'flex';
+      document.getElementById('selectedUnitPayment').textContent = '详见发售招标文件';
+    } 
+    else if (u.status === '在售' || u.status === '已定价未售') {
+      origPriceCont.style.display = 'flex';
+      document.getElementById('selectedUnitOrigPrice').textContent = formatMoney(u.origPrice);
+      
+      discPriceCont.style.display = 'flex';
+      discPriceCont.querySelector('.price-label').textContent = '折实:';
+      document.getElementById('selectedUnitDiscPrice').textContent = formatMoney(u.discPrice);
+      
+      if (u.discount && u.discount !== '-') {
+        discountBadge.style.display = 'block';
+        discountBadge.textContent = `-${u.discount}`; /* 折扣前缀 - 即可，省略“最高折扣:”汉字更清爽 */
+      } else {
+        discountBadge.style.display = 'none';
+      }
+      
+      origFtPriceCont.style.display = 'none'; // 在售定价单位直接隐藏原呎价，节省空间
+      
+      discFtPriceCont.style.display = 'flex';
+      discFtPriceCont.querySelector('.price-label').textContent = '折实呎:';
+      document.getElementById('selectedUnitDiscFtPrice').textContent = formatMoney(u.discFtPrice) + '/呎';
+      
+      if (u.payment && u.payment !== '-') {
+        paymentCont.style.display = 'flex';
+        document.getElementById('selectedUnitPayment').textContent = u.payment;
+      } else {
+        paymentCont.style.display = 'none';
+      }
+    } 
+    else {
+      origPriceCont.style.display = 'none';
+      discPriceCont.style.display = 'flex';
+      discPriceCont.querySelector('.price-label').textContent = '发售:';
+      document.getElementById('selectedUnitDiscPrice').textContent = '暂未定价';
+      
+      discountBadge.style.display = 'none';
+      origFtPriceCont.style.display = 'none';
+      discFtPriceCont.style.display = 'none';
+      paymentCont.style.display = 'none';
+    }
+
+    // 控制第二行的整体显示与隐藏以及各分割线的自适应显隐
+    const bottomRow = document.getElementById('selectedUnitRowBottom');
+    const div1 = document.getElementById('divider1');
+    const divBottom = document.getElementById('dividerBottom');
+
+    if (u.status === '待售' || (u.status === '暂停销售' && !u.origPrice)) {
+      if (bottomRow) bottomRow.style.display = 'none';
+      if (div1) div1.style.display = 'none';
+    } else {
+      if (bottomRow) bottomRow.style.display = 'flex';
+      if (div1) div1.style.display = '';
+      if (divBottom) {
+        // 如果是已售（无付款）、招标（无折实呎价）或普通在售没有最惠付款时，隐藏第二行的竖向分割线
+        if (u.status === '已售' || (u.isTender && u.status !== '已售') || !u.payment || u.payment === '-') {
+          divBottom.style.display = 'none';
+        } else {
+          divBottom.style.display = '';
+        }
+      }
+    }
+  }
+
+  // 9.6 户型图大图全屏缩放放大
+  const floorplanImgElement = document.getElementById('floorplanImg');
+  if (floorplanImgElement) {
+    floorplanImgElement.addEventListener('click', () => {
+      if (!floorplanImgElement.src || floorplanImgElement.style.display === 'none') return;
+      
+      const zoomOverlay = document.createElement('div');
+      zoomOverlay.className = 'floorplan-zoom-overlay';
+      
+      const zoomImg = document.createElement('img');
+      zoomImg.className = 'floorplan-zoom-img';
+      zoomImg.src = floorplanImgElement.src;
+      
+      zoomOverlay.appendChild(zoomImg);
+      document.body.appendChild(zoomOverlay);
+      
+      zoomOverlay.addEventListener('click', () => {
+        zoomOverlay.remove();
+      });
+    });
   }
 
   // 10. 应用缩放值并处理浏览器兼容性
@@ -692,6 +1246,19 @@ document.addEventListener('DOMContentLoaded', () => {
         passwordInput.focus();
       }
     }
+  }
+
+  // 绑定悬浮卡片的 Close 按钮交互
+  const closeCardBtn = document.getElementById('closeCardBtn');
+  if (closeCardBtn) {
+    closeCardBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      activePinnedUnitKey = null;
+      const card = document.getElementById('selectedUnitCard');
+      if (card) {
+        card.classList.remove('active');
+      }
+    });
   }
 
   // 启动应用程序生命周期 (拦截式校验)

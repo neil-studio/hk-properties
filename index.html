@@ -73,6 +73,106 @@
       </div>
     </section>
 
+    <!-- 精选与聚焦流光专区 -->
+    <section class="promotion-area" id="promotionArea" style="display: none;">
+      <!-- 左侧：今日聚焦 3张卡片网格 -->
+      <div class="promotion-focus-grid" id="promoFocusGrid">
+        <!-- 聚焦盘 1 -->
+        <div class="promotion-focus" id="promoFocusCard1" style="display: none;">
+          <div class="promo-focus-glow"></div>
+          <div class="promo-focus-content">
+            <div class="promo-badge">🔥 焦点项目 I</div>
+            <h2 class="promo-focus-title">-</h2>
+            <div class="promo-focus-tags">
+              <span class="promo-tag promo-region">-</span>
+              <span class="promo-tag promo-district">-</span>
+            </div>
+            <p class="promo-focus-desc">-</p>
+            <div class="promo-focus-stats">
+              <div class="promo-stat-item">
+                <span class="label">去化率:</span>
+                <span class="val promo-rate">-%</span>
+              </div>
+              <div class="promo-stat-item">
+                <span class="label">规划套数:</span>
+                <span class="val promo-units">-</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-promo-view promo-btn">查看销控图与卖点</button>
+          </div>
+        </div>
+        
+        <!-- 聚焦盘 2 -->
+        <div class="promotion-focus" id="promoFocusCard2" style="display: none;">
+          <div class="promo-focus-glow"></div>
+          <div class="promo-focus-content">
+            <div class="promo-badge">🔥 焦点项目 II</div>
+            <h2 class="promo-focus-title">-</h2>
+            <div class="promo-focus-tags">
+              <span class="promo-tag promo-region">-</span>
+              <span class="promo-tag promo-district">-</span>
+            </div>
+            <p class="promo-focus-desc">-</p>
+            <div class="promo-focus-stats">
+              <div class="promo-stat-item">
+                <span class="label">去化率:</span>
+                <span class="val promo-rate">-%</span>
+              </div>
+              <div class="promo-stat-item">
+                <span class="label">规划套数:</span>
+                <span class="val promo-units">-</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-promo-view promo-btn">查看销控图与卖点</button>
+          </div>
+        </div>
+
+        <!-- 聚焦盘 3 -->
+        <div class="promotion-focus" id="promoFocusCard3" style="display: none;">
+          <div class="promo-focus-glow"></div>
+          <div class="promo-focus-content">
+            <div class="promo-badge">🔥 焦点项目 III</div>
+            <h2 class="promo-focus-title">-</h2>
+            <div class="promo-focus-tags">
+              <span class="promo-tag promo-region">-</span>
+              <span class="promo-tag promo-district">-</span>
+            </div>
+            <p class="promo-focus-desc">-</p>
+            <div class="promo-focus-stats">
+              <div class="promo-stat-item">
+                <span class="label">去化率:</span>
+                <span class="val promo-rate">-%</span>
+              </div>
+              <div class="promo-stat-item">
+                <span class="label">规划套数:</span>
+                <span class="val promo-units">-</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-promo-view promo-btn">查看销控图与卖点</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右侧：精选推荐价格切换轮播 -->
+      <div class="promotion-featured">
+        <div class="promo-title-row">
+          <h3>🌟 精选推荐盘</h3>
+          <span class="promo-scroll-tip">左右滑动查看更多 →</span>
+        </div>
+        <!-- 价位分段页签导航 -->
+        <div class="price-tab-bar" id="priceTabBar">
+          <button class="price-tab-btn active" data-price="all">全部</button>
+          <button class="price-tab-btn" data-price="1000-2000">1000-2000万</button>
+          <button class="price-tab-btn" data-price="2000-5000">2000-5000万</button>
+          <button class="price-tab-btn" data-price="5000-10000">5000万-1亿</button>
+          <button class="price-tab-btn" data-price="10000+">1亿以上 👑</button>
+        </div>
+        <div class="featured-carousel" id="featuredCarousel">
+          <!-- 动态生成精选卡片 -->
+        </div>
+      </div>
+    </section>
+
     <!-- 搜索与筛选面板 -->
     <section class="filter-panel">
       <div class="search-box">
@@ -94,6 +194,14 @@
           <select id="districtSelect">
             <option value="all">所有商圈</option>
           </select>
+        </div>
+
+        <div class="btn-group" id="gradeFilter" style="margin-left: 0.5rem;">
+          <button class="filter-btn active" data-grade="all">全部评级</button>
+          <button class="filter-btn" data-grade="A+">A+</button>
+          <button class="filter-btn" data-grade="A">A</button>
+          <button class="filter-btn" data-grade="B">B</button>
+          <button class="filter-btn" data-grade="C">C</button>
         </div>
       </div>
     </section>
@@ -123,73 +231,204 @@
         </button>
       </header>
 
-      <div class="modal-content">
-        <!-- 楼栋切换 Tab 栏 -->
-        <div class="building-tabs-wrapper">
-          <div class="building-tabs" id="buildingTabs">
-            <!-- 楼栋按钮动态生成 -->
+      <!-- 模态框页签导航 -->
+      <div class="modal-nav-tabs" id="modalNavTabs" style="display: none;">
+        <button class="modal-nav-btn active" data-pane="paneGrid">📊 销控矩阵网格图</button>
+        <button class="modal-nav-btn" data-pane="paneInfo">💎 楼盘卖点与核心详情</button>
+      </div>
+
+      <div class="modal-content-split">
+        <!-- 左侧：销控与卖点详情 -->
+        <div class="modal-left-content">
+          <!-- 窗格一：销控矩阵图 -->
+          <div class="modal-pane active" id="paneGrid">
+            <!-- 楼栋切换 Tab 栏 -->
+            <div class="building-tabs-wrapper">
+              <div class="building-tabs" id="buildingTabs">
+                <!-- 楼栋按钮动态生成 -->
+              </div>
+            </div>
+
+            <!-- 楼栋内部去化统计面板 -->
+            <div class="building-stats-panel" id="buildingStatsPanel">
+              <div class="building-stat-item status-total">
+                <span class="dot"></span>
+                <span class="label">总套数:</span>
+                <span class="val" id="bStatTotal">-</span>
+              </div>
+              <div class="building-stat-item status-sale">
+                <span class="dot"></span>
+                <span class="label">在售:</span>
+                <span class="val" id="bStatSale">-</span>
+              </div>
+              <div class="building-stat-item status-priced">
+                <span class="dot"></span>
+                <span class="label">已定价未售:</span>
+                <span class="val" id="bStatPriced">-</span>
+              </div>
+              <div class="building-stat-item status-sold">
+                <span class="dot"></span>
+                <span class="label">已售:</span>
+                <span class="val" id="bStatSold">-</span>
+              </div>
+              <div class="building-stat-item status-stopped">
+                <span class="dot"></span>
+                <span class="label">暂停销售:</span>
+                <span class="val" id="bStatStopped">-</span>
+              </div>
+            </div>
+
+            <!-- 网格图缩放/平移操作提示与缩放控制 -->
+            <div class="grid-controls-row">
+              <div class="grid-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tip-icon">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                </svg>
+                <span>若屏幕尺寸较小，可左右拖拽/双指缩放网格图</span>
+              </div>
+              <div class="zoom-controls">
+                <button class="zoom-btn" id="zoomOutBtn" title="缩小">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+                <span class="zoom-level" id="zoomLevel">100%</span>
+                <button class="zoom-btn" id="zoomInBtn" title="放大">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+                <button class="zoom-btn reset-btn" id="zoomResetBtn">重置</button>
+              </div>
+            </div>
+
+            <!-- 销控矩阵渲染区 -->
+            <div class="grid-render-area" id="gridRenderArea">
+              <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>正在解析 Excel 楼栋数据，请稍候...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 窗格二：楼盘卖点与介绍 -->
+          <div class="modal-pane" id="paneInfo">
+            <div class="info-details-container">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  <h3>🏙 项目基础信息</h3>
+                </div>
+                <div class="info-card-body" id="infoBasic">-</div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card-header">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <h3>💎 核心卖点</h3>
+                </div>
+                <div class="info-card-body" id="infoSelling">-</div>
+              </div>
+
+              <div class="info-card highlight-mainland">
+                <div class="info-card-header">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <h3>🇨🇳 内地高净值客户专属卖点</h3>
+                </div>
+                <div class="info-card-body" id="infoMainland">-</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 楼栋内部去化统计面板 -->
-        <div class="building-stats-panel" id="buildingStatsPanel">
-          <div class="building-stat-item status-total">
-            <span class="dot"></span>
-            <span class="label">总套数:</span>
-            <span class="val" id="bStatTotal">-</span>
+        <!-- 右侧：高清户型图大画板 -->
+        <div class="modal-floorplan-panel" id="modalFloorplanPanel">
+          <div class="floorplan-header">
+            <h3>📖 户型结构平面图</h3>
+            <span class="floorplan-target-label" id="floorplanTargetLabel">请悬停或点击单元格</span>
           </div>
-          <div class="building-stat-item status-sale">
-            <span class="dot"></span>
-            <span class="label">在售:</span>
-            <span class="val" id="bStatSale">-</span>
-          </div>
-          <div class="building-stat-item status-priced">
-            <span class="dot"></span>
-            <span class="label">已定价未售:</span>
-            <span class="val" id="bStatPriced">-</span>
-          </div>
-          <div class="building-stat-item status-sold">
-            <span class="dot"></span>
-            <span class="label">已售:</span>
-            <span class="val" id="bStatSold">-</span>
-          </div>
-          <div class="building-stat-item status-stopped">
-            <span class="dot"></span>
-            <span class="label">暂停销售:</span>
-            <span class="val" id="bStatStopped">-</span>
-          </div>
-        </div>
-
-        <!-- 网格图缩放/平移操作提示与缩放控制 -->
-        <div class="grid-controls-row">
-          <div class="grid-tip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tip-icon">
-              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
-            </svg>
-            <span>若屏幕尺寸较小，可左右拖拽/双指缩放网格图</span>
-          </div>
-          <div class="zoom-controls">
-            <button class="zoom-btn" id="zoomOutBtn" title="缩小">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
+          <div class="floorplan-viewer" id="floorplanViewer">
+            <!-- 默认未就绪时的精致插画和引导 -->
+            <div class="floorplan-placeholder" id="floorplanPlaceholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
               </svg>
-            </button>
-            <span class="zoom-level" id="zoomLevel">100%</span>
-            <button class="zoom-btn" id="zoomInBtn" title="放大">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </button>
-            <button class="zoom-btn reset-btn" id="zoomResetBtn">重置</button>
+              <p>在网格图上悬停或点击房号，即可在此查看对应户型图</p>
+            </div>
+            <!-- 图片载入显示 -->
+            <img class="floorplan-img" id="floorplanImg" src="" style="display: none;" alt="平面图">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- 销控矩阵渲染区 -->
-        <div class="grid-render-area" id="gridRenderArea">
-          <div class="loading-spinner">
-            <div class="spinner"></div>
-            <p>正在解析 Excel 楼栋数据，请稍候...</p>
+  <!-- 选中单位折扣与付款周期详情悬浮面板 (挂在 body 根层级防父级 transform 污染) -->
+  <div class="selected-unit-card" id="selectedUnitCard">
+    <button class="close-card-btn" id="closeCardBtn" title="关闭悬浮窗">&times;</button>
+    <div class="selected-unit-placeholder">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="placeholder-icon">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 16v-4M12 8h.01"></path>
+      </svg>
+      <span>鼠标悬停或点击网格中的单元格，即可实时计算最高折扣与最惠付款办法</span>
+    </div>
+    <div class="selected-unit-detail" style="display: none;">
+      <!-- 第一行：单元名称 + 状态标识 | 总价信息 -->
+      <div class="card-row card-row-top">
+        <div class="unit-col unit-meta-col">
+          <span class="unit-name" id="selectedUnitName">-</span>
+          <span class="unit-status-badge" id="selectedUnitStatus">-</span>
+        </div>
+        
+        <div class="v-divider" id="divider1"></div>
+        
+        <div class="unit-col unit-prices-col">
+          <div class="price-box price-original" id="selectedUnitOrigPriceContainer">
+            <span class="price-label">原价:</span>
+            <span class="price-val" id="selectedUnitOrigPrice">-</span>
+          </div>
+          <div class="discount-badge" id="selectedUnitDiscountBadge">-</div>
+          <div class="price-box price-discount" id="selectedUnitDiscPriceContainer">
+            <span class="price-label">折实:</span>
+            <span class="price-val" id="selectedUnitDiscPrice">-</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 第二行：呎价信息 | 最惠付款节奏 -->
+      <div class="card-row card-row-bottom" id="selectedUnitRowBottom">
+        <div class="unit-col unit-ft-col">
+          <!-- 原呎已在JS里对普通单元隐藏，此处仅放置折实呎 -->
+          <div class="meta-item" id="selectedUnitOrigFtPriceContainer" style="display: none;">
+            <span class="price-label">原呎:</span>
+            <span class="meta-val" id="selectedUnitOrigFtPrice">-</span>
+          </div>
+          <div class="meta-item" id="selectedUnitDiscFtPriceContainer">
+            <span class="price-label">折实呎:</span>
+            <span class="meta-val" id="selectedUnitDiscFtPrice">-</span>
+          </div>
+        </div>
+        
+        <div class="v-divider" id="dividerBottom"></div>
+        
+        <div class="unit-col unit-pay-col" id="selectedUnitPaymentContainer">
+          <div class="meta-item payment-scheme">
+            <span class="price-label">付款:</span>
+            <span class="meta-val" id="selectedUnitPayment">-</span>
           </div>
         </div>
       </div>

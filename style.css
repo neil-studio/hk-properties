@@ -1214,3 +1214,865 @@ body {
   20%, 60% { transform: translateX(-8px); }
   40%, 80% { transform: translateX(8px); }
 }
+
+/* ==========================================================================
+   精选与聚焦专区重构样式 (Featured & Focus Promotion Grid)
+   ========================================================================== */
+.promotion-area {
+  display: grid;
+  grid-template-columns: 2.8fr 2fr;
+  gap: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 1100px) {
+  .promotion-area {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 左侧今日聚焦网格 */
+.promotion-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .promotion-focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.promotion-focus {
+  background: rgba(30, 27, 75, 0.25);
+  border: 1px solid rgba(165, 180, 252, 0.15);
+  border-radius: 20px;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  transition: all 0.3s ease;
+}
+
+.promotion-focus:hover {
+  transform: translateY(-4px);
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.15);
+}
+
+.promo-focus-glow {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%);
+  filter: blur(15px);
+  pointer-events: none;
+}
+
+.promo-focus-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffedd5;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.promo-focus-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.promo-focus-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.promo-tag {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.promo-focus-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.promo-focus-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  margin-bottom: 0.8rem;
+}
+
+.promo-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-stat-item .label {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+}
+
+.promo-stat-item .val {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.promo-rate {
+  color: #f97316;
+}
+
+.promo-units {
+  color: #ffffff;
+}
+
+.promo-btn {
+  width: 100%;
+  padding: 0.5rem !important;
+  font-size: 0.8rem !important;
+}
+
+/* 右侧精选分类轮播 */
+.promotion-featured {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.promo-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.promo-title-row h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.promo-scroll-tip {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+/* 价位选择 Tab 栏 */
+.price-tab-bar {
+  display: flex;
+  gap: 0.35rem;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.25rem;
+  margin-bottom: 0.8rem;
+  overflow-x: auto;
+  scrollbar-width: none; /* 隐藏滚动条 */
+}
+
+.price-tab-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.price-tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.45rem 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.price-tab-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.price-tab-btn.active {
+  background: rgba(251, 191, 36, 0.12);
+  color: var(--accent-gold);
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  box-shadow: 0 2px 10px rgba(251, 191, 36, 0.05);
+}
+
+/* 轮播卡片 */
+.featured-carousel {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.6rem;
+  scrollbar-width: thin;
+}
+
+.featured-carousel::-webkit-scrollbar {
+  height: 5px;
+}
+.featured-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.featured-carousel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+.featured-carousel::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.featured-card {
+  flex: 0 0 200px; /* 卡片更紧凑 */
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 165px;
+}
+
+.featured-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(251, 191, 36, 0.35);
+  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.12);
+}
+
+.feat-card-header {
+  margin-bottom: 0.5rem;
+}
+
+.feat-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fef08a;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+}
+
+.feat-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.25;
+}
+
+.feat-card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.feat-card-meta strong {
+  color: var(--accent-gold);
+}
+
+
+/* ==========================================================================
+   评级系统徽章样式 (Grade Badge Design)
+   ========================================================================== */
+.project-card {
+  position: relative; /* 确保定位可用 */
+}
+
+.grade-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.01em;
+  z-index: 5;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover .grade-badge {
+  transform: scale(1.12);
+}
+
+/* 评级 A+ 渐变炫金 */
+.grade-aplus {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  color: #000000;
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  animation: glow-gold 1.5s infinite alternate;
+}
+
+@keyframes glow-gold {
+  0% { box-shadow: 0 0 6px rgba(251, 191, 36, 0.3); }
+  100% { box-shadow: 0 0 12px rgba(251, 191, 36, 0.6); }
+}
+
+/* 评级 A 尊贵亮紫蓝 */
+.grade-a {
+  background: linear-gradient(135deg, #c084fc 0%, #7c3aed 100%);
+  color: #ffffff;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+/* 评级 B 稳定翡翠绿 */
+.grade-b {
+  background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+  color: #000000;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+/* 评级 C 低调陨石灰 */
+.grade-c {
+  background: linear-gradient(135deg, #9ca3af 0%, #4b5563 100%);
+  color: #ffffff;
+  border: 1px solid rgba(156, 163, 175, 0.2);
+}
+
+/* 详情模态弹窗评级微标 */
+.modal-grade-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 4px;
+  margin-left: 0.75rem;
+  vertical-align: middle;
+}
+
+.modal-grade-aplus {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fde047;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+.modal-grade-a {
+  background: rgba(167, 139, 250, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+}
+.modal-grade-b {
+  background: rgba(52, 211, 153, 0.15);
+  color: #6ee7b7;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+}
+.modal-grade-c {
+  background: rgba(156, 163, 175, 0.15);
+  color: #d1d5db;
+  border: 1px solid rgba(156, 163, 175, 0.35);
+}
+
+
+/* ==========================================================================
+   模态弹窗导航页签与卖点卡片样式 (Modal Navigation & Detail Cards)
+   ========================================================================== */
+.modal-nav-tabs {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.3rem;
+  border-radius: 12px;
+  margin: 0 2rem;
+  border: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.modal-nav-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.modal-nav-btn.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-pane {
+  display: none;
+}
+
+.modal-pane.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 楼盘卖点详情卡片排版 */
+.info-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.6rem;
+}
+
+.info-card-header svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--accent-color);
+}
+
+.info-card-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.info-card-body {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  white-space: pre-wrap; /* 极关键：原样呈现多行与段落换行 */
+}
+
+/* 内地客户卖点卡片高亮样式 */
+.info-card.highlight-mainland {
+  background: rgba(234, 88, 12, 0.04);
+  border-color: rgba(234, 88, 12, 0.25);
+  box-shadow: 0 0 20px rgba(234, 88, 12, 0.05);
+}
+
+.info-card.highlight-mainland .info-card-header svg {
+  color: #f97316;
+}
+
+.info-card.highlight-mainland .info-card-header h3 {
+  color: #fdba74;
+}
+
+.info-card.highlight-mainland .info-card-body {
+  color: #fed7aa;
+}
+
+/* ==========================================================================
+   左右分屏详情与户型图大画板样式 (Modal Split Panel & Floor Plan)
+   ========================================================================== */
+.modal-content-split {
+  display: flex;
+  height: calc(100vh - 180px); /* 动态减去 modal header 和 tab 占用的高度 */
+  overflow: hidden;
+}
+
+.modal-left-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 2rem;
+  min-width: 0; /* 防止子元素撑破容器 */
+}
+
+/* 右侧户型图面板 - 已根据用户要求禁用 */
+.modal-floorplan-panel {
+  display: none !important;
+}
+
+.floorplan-header {
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.floorplan-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.floorplan-target-label {
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+/* 户型图展示画板 */
+.floorplan-viewer {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 未就绪时的占位插画 */
+.floorplan-placeholder {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.floorplan-placeholder svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: rgba(255, 255, 255, 0.08);
+  margin-bottom: 1rem;
+  animation: float-svg 3s ease-in-out infinite;
+}
+
+@keyframes float-svg {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.floorplan-placeholder p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  max-width: 200px;
+}
+
+/* 户型图大图呈现 */
+.floorplan-img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+  animation: fadeInFloorplan 0.3s ease-out forwards;
+}
+
+@keyframes fadeInFloorplan {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* 点击放大遮罩层 */
+.floorplan-zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  animation: fadeInZoom 0.2s ease-out forwards;
+}
+
+@keyframes fadeInZoom {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.floorplan-zoom-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* 移动端/小屏响应式适配 */
+@media (max-width: 1024px) {
+  .modal-content-split {
+    flex-direction: column;
+    height: auto;
+    overflow-y: auto;
+  }
+  .modal-left-content {
+    overflow-y: visible;
+    height: auto;
+  }
+  .modal-floorplan-panel {
+    width: 100%;
+    max-width: 100%;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    height: 350px;
+    flex-shrink: 0;
+  }
+}
+
+/* 选中单位折扣与付款办法卡片样式 */
+.selected-unit-card {
+  position: fixed;
+  bottom: 16px; /* 稍微更贴近底边 */
+  left: 50%;
+  transform: translate(-50%, 150%); /* 默认滑入到屏幕外隐藏 */
+  width: 92%;
+  max-width: 780px; /* 弹窗稍微加长一点 */
+  padding: 0.55rem 2.25rem 0.55rem 1.25rem; /* 高度缩小1/2，上下内边距极窄 */
+  background: rgba(20, 27, 33, 0.95);
+  border: 1.2px solid rgba(16, 185, 129, 0.5); /* 极光绿边框 */
+  border-radius: 12px; /* 更干练的圆角 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 20000;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box; /* 强行应用 border-box */
+}
+
+/* 当卡片处于选中激活状态时优雅滑起 */
+.selected-unit-card.active {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.selected-unit-card:hover {
+  border-color: rgba(16, 185, 129, 0.65);
+  box-shadow: 0 12px 36px rgba(16, 185, 129, 0.12);
+}
+
+.close-card-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-secondary, #8b9bb4);
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 2px 4px;
+  transition: all 0.2s;
+  z-index: 5;
+}
+
+.close-card-btn:hover {
+  color: #ef4444;
+  transform: scale(1.1);
+}
+
+.selected-unit-placeholder {
+  display: none;
+}
+
+/* 2行扁平横向网格流 */
+.card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.card-row-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* 极细横向分割线 */
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-row-bottom {
+  display: flex;
+}
+
+.v-divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+.unit-col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.unit-meta-col {
+  gap: 0.4rem;
+}
+
+.unit-prices-col {
+  gap: 0.6rem;
+}
+
+.unit-ft-col {
+  gap: 0.5rem;
+}
+
+.unit-pay-col {
+  flex-grow: 1;
+}
+
+.selected-unit-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.unit-name {
+  font-size: 0.92rem; /* 字条改小 */
+  font-weight: 700;
+  color: var(--text-primary, #ffffff);
+}
+
+.unit-status-badge {
+  font-size: 0.7rem;
+  padding: 0.08rem 0.35rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* 状态对应样式 */
+.unit-status-badge.status-sale { background: rgba(169, 245, 169, 0.15); color: #A9F5A9; border: 1px solid rgba(169, 245, 169, 0.3); }
+.unit-status-badge.status-priced { background: rgba(169, 208, 245, 0.15); color: #A9D0F5; border: 1px solid rgba(169, 208, 245, 0.3); }
+.unit-status-badge.status-sold { background: rgba(245, 169, 169, 0.15); color: #F5A9A9; border: 1px solid rgba(245, 169, 169, 0.3); }
+.unit-status-badge.status-stopped { background: rgba(255, 192, 0, 0.15); color: #FFC000; border: 1px solid rgba(255, 192, 0, 0.3); }
+.unit-status-badge.status-pending { background: rgba(255, 255, 255, 0.1); color: #cccccc; border: 1px solid rgba(255, 255, 255, 0.2); }
+
+.price-box {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.price-label {
+  font-size: 0.78rem; /* 字条改小 */
+  color: var(--text-secondary, #8b9bb4);
+}
+
+.price-original .price-val {
+  font-size: 0.85rem; /* 字条改小 */
+  text-decoration: line-through;
+  color: var(--text-muted, #64748b);
+}
+
+.price-discount .price-val {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #10B981;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.2);
+}
+
+.discount-badge {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: bold;
+  padding: 0.08rem 0.3rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
+}
+
+.meta-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.meta-val {
+  color: var(--text-primary, #ffffff);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.payment-scheme {
+  flex: 1;
+  min-width: 100px;
+}
+
+.payment-scheme .meta-val {
+  color: #60A5FA;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
