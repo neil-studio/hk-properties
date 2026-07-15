@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. 初始化，获取数据索引
   async function init() {
     try {
-      const response = await fetch('data.json');
+      const response = await fetch('data.json?v=' + Date.now());
       if (!response.ok) {
         throw new Error('未找到元数据文件 data.json，请先运行 build_web.py 脚本生成数据库。');
       }
@@ -613,7 +613,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 8. Fetch Excel 文件并使用 SheetJS 解析
   async function fetchExcelAndRender(url) {
     try {
-      const response = await fetch(url);
+      const response = await fetch(url + '?v=' + Date.now());
       if (!response.ok) {
         throw new Error('下载 Excel 文件失败，该文件可能不存在于服务器上。');
       }
