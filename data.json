@@ -7,7 +7,7 @@
     "total_priced": 642,
     "total_stopped": 567,
     "total_pending": 8163,
-    "last_updated": "2026-07-15 10:07:53",
+    "last_updated": "2026-07-15 11:50:47",
     "overall_sold_rate": 72.4
   },
   "projects": [
@@ -509,7 +509,7 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-Henley Park.xlsx",
-      "file_size_kb": 68.1,
+      "file_size_kb": 67.6,
       "stats": {
         "total": 740,
         "sold": 502,
