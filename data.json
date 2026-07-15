@@ -3,11 +3,11 @@
     "total_projects": 152,
     "total_units": 40115,
     "total_sold": 29035,
-    "total_sale": 1707,
-    "total_priced": 643,
+    "total_sale": 1708,
+    "total_priced": 642,
     "total_stopped": 567,
     "total_pending": 8163,
-    "last_updated": "2026-07-15 09:20:56",
+    "last_updated": "2026-07-15 10:07:53",
     "overall_sold_rate": 72.4
   },
   "projects": [
@@ -43,7 +43,7 @@
         "pending": 73,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "The Monet 第2期",
@@ -60,7 +60,7 @@
         "pending": 14,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "The Monet 第3期",
@@ -77,7 +77,7 @@
         "pending": 23,
         "sold_rate": 50.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "博峰",
@@ -94,7 +94,7 @@
         "pending": 46,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "喇沙汇",
@@ -145,7 +145,7 @@
         "pending": 12,
         "sold_rate": 81.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天玺",
@@ -173,13 +173,13 @@
       "stats": {
         "total": 259,
         "sold": 258,
-        "sale": 0,
-        "priced": 1,
+        "sale": 1,
+        "priced": 0,
         "stopped": 0,
         "pending": 0,
         "sold_rate": 99.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "128 Waterloo",
@@ -196,7 +196,7 @@
         "pending": 4,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Prince Central",
@@ -213,7 +213,7 @@
         "pending": 21,
         "sold_rate": 28.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "VAU Residence",
@@ -230,7 +230,7 @@
         "pending": 0,
         "sold_rate": 93.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "st. george's mansions",
@@ -247,7 +247,7 @@
         "pending": 1,
         "sold_rate": 90.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "傲玟",
@@ -264,7 +264,7 @@
         "pending": 58,
         "sold_rate": 82.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "名钻",
@@ -281,7 +281,7 @@
         "pending": 2,
         "sold_rate": 92.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天铸 (第2期)",
@@ -298,7 +298,7 @@
         "pending": 2,
         "sold_rate": 99.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "太子道西233号",
@@ -349,7 +349,7 @@
         "pending": 143,
         "sold_rate": 38.8
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "朗贤峰第IIB期",
@@ -366,7 +366,7 @@
         "pending": 0,
         "sold_rate": 95.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "瑜一第IC期",
@@ -400,7 +400,7 @@
         "pending": 25,
         "sold_rate": 81.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "耀爵台",
@@ -434,7 +434,7 @@
         "pending": 0,
         "sold_rate": 45.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "誉林",
@@ -468,7 +468,7 @@
         "pending": 45,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Double Coast I",
@@ -502,14 +502,14 @@
         "pending": 299,
         "sold_rate": 41.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Henley Park",
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-Henley Park.xlsx",
-      "file_size_kb": 67.5,
+      "file_size_kb": 68.1,
       "stats": {
         "total": 740,
         "sold": 502,
@@ -519,7 +519,7 @@
         "pending": 135,
         "sold_rate": 67.8
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Miami Quay I",
@@ -536,7 +536,7 @@
         "pending": 178,
         "sold_rate": 63.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Miami Quay II",
@@ -553,7 +553,7 @@
         "pending": 443,
         "sold_rate": 19.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Monaco Marine",
@@ -611,7 +611,7 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-The Henley I.xlsx",
-      "file_size_kb": 49.8,
+      "file_size_kb": 49.9,
       "stats": {
         "total": 479,
         "sold": 400,
@@ -621,7 +621,7 @@
         "pending": 0,
         "sold_rate": 83.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "The Henley II",
@@ -638,14 +638,14 @@
         "pending": 3,
         "sold_rate": 86.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "The Henley III",
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-The Henley III.xlsx",
-      "file_size_kb": 39.0,
+      "file_size_kb": 38.9,
       "stats": {
         "total": 404,
         "sold": 296,
@@ -655,7 +655,7 @@
         "pending": 52,
         "sold_rate": 73.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "启德海湾 1",
@@ -672,7 +672,7 @@
         "pending": 9,
         "sold_rate": 83.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "启德海湾 2",
@@ -689,7 +689,7 @@
         "pending": 715,
         "sold_rate": 24.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天泷",
@@ -706,7 +706,7 @@
         "pending": 219,
         "sold_rate": 54.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天玺．天",
@@ -723,7 +723,7 @@
         "pending": 0,
         "sold_rate": 97.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天玺．天第2期",
@@ -740,7 +740,7 @@
         "pending": 271,
         "sold_rate": 36.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天玺．海第1期",
@@ -757,7 +757,7 @@
         "pending": 118,
         "sold_rate": 38.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天玺．海第2A期",
@@ -774,7 +774,7 @@
         "pending": 24,
         "sold_rate": 39.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天玺．海第2B期",
@@ -791,7 +791,7 @@
         "pending": 130,
         "sold_rate": 2.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "柏蔚森 I",
@@ -825,7 +825,7 @@
         "pending": 194,
         "sold_rate": 59.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "柏蔚森 III",
@@ -842,7 +842,7 @@
         "pending": 18,
         "sold_rate": 86.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "沄璟",
@@ -859,7 +859,7 @@
         "pending": 79,
         "sold_rate": 81.8
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "维港1号",
@@ -876,7 +876,7 @@
         "pending": 0,
         "sold_rate": 99.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "维港．双钻",
@@ -893,7 +893,7 @@
         "pending": 181,
         "sold_rate": 53.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "维港．湾畔第1A期",
@@ -910,7 +910,7 @@
         "pending": 438,
         "sold_rate": 24.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "维港．湾畔第1B期",
@@ -927,7 +927,7 @@
         "pending": 332,
         "sold_rate": 33.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "维港．湾畔第2B期",
@@ -944,7 +944,7 @@
         "pending": 473,
         "sold_rate": 6.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "本木",
@@ -978,7 +978,7 @@
         "pending": 58,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Upper Prince",
@@ -995,7 +995,7 @@
         "pending": 137,
         "sold_rate": 1.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "利奥坊．凯岸",
@@ -1012,7 +1012,7 @@
         "pending": 1,
         "sold_rate": 99.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "利奥坊．曦岸",
@@ -1063,7 +1063,7 @@
         "pending": 54,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Beacon Peak 第1期",
@@ -1080,7 +1080,7 @@
         "pending": 185,
         "sold_rate": 38.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "滶蕴",
@@ -1097,7 +1097,7 @@
         "pending": 0,
         "sold_rate": 56.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "The Haddon",
@@ -1165,14 +1165,14 @@
         "pending": 2,
         "sold_rate": 73.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "首岸第1期",
       "region": "九龙",
       "district": "红磡",
       "filename": "九龙-红磡-首岸第1期.xlsx",
-      "file_size_kb": 32.7,
+      "file_size_kb": 32.8,
       "stats": {
         "total": 360,
         "sold": 338,
@@ -1182,7 +1182,7 @@
         "pending": 10,
         "sold_rate": 93.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "首岸第2期",
@@ -1199,14 +1199,14 @@
         "pending": 384,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "首岸第3期",
       "region": "九龙",
       "district": "红磡",
       "filename": "九龙-红磡-首岸第3期.xlsx",
-      "file_size_kb": 28.8,
+      "file_size_kb": 28.9,
       "stats": {
         "total": 288,
         "sold": 243,
@@ -1216,7 +1216,7 @@
         "pending": 10,
         "sold_rate": 84.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "首岸第4期",
@@ -1233,7 +1233,7 @@
         "pending": 124,
         "sold_rate": 30.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "首汇",
@@ -1250,7 +1250,7 @@
         "pending": 1,
         "sold_rate": 90.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "汇玺III",
@@ -1267,7 +1267,7 @@
         "pending": 5,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "维港汇 I",
@@ -1318,7 +1318,7 @@
         "pending": 0,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "壹沐第1期",
@@ -1335,14 +1335,14 @@
         "pending": 0,
         "sold_rate": 99.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "壹沐第2期",
       "region": "九龙",
       "district": "马头角",
       "filename": "九龙-马头角-壹沐第2期.xlsx",
-      "file_size_kb": 37.4,
+      "file_size_kb": 37.5,
       "stats": {
         "total": 415,
         "sold": 281,
@@ -1352,7 +1352,7 @@
         "pending": 69,
         "sold_rate": 67.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "文曜",
@@ -1369,7 +1369,7 @@
         "pending": 9,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "瑧博",
@@ -1471,7 +1471,7 @@
         "pending": 177,
         "sold_rate": 40.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "海璇 II",
@@ -1488,7 +1488,7 @@
         "pending": 93,
         "sold_rate": 24.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "海璇 II (第2B-3期)",
@@ -1505,7 +1505,7 @@
         "pending": 174,
         "sold_rate": 23.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "雅盈峰",
@@ -1522,7 +1522,7 @@
         "pending": 8,
         "sold_rate": 91.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Central Peak I",
@@ -1539,7 +1539,7 @@
         "pending": 40,
         "sold_rate": 15.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Central Peak II",
@@ -1556,7 +1556,7 @@
         "pending": 15,
         "sold_rate": 15.8
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "21 Borrett Road 第1期",
@@ -1573,7 +1573,7 @@
         "pending": 60,
         "sold_rate": 48.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Mount Pokfulam",
@@ -1590,7 +1590,7 @@
         "pending": 2,
         "sold_rate": 57.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Upper Central",
@@ -1607,7 +1607,7 @@
         "pending": 0,
         "sold_rate": 85.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "大学阁",
@@ -1624,7 +1624,7 @@
         "pending": 23,
         "sold_rate": 69.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天御第1期",
@@ -1641,7 +1641,7 @@
         "pending": 94,
         "sold_rate": 11.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "天御第2期",
@@ -1658,7 +1658,7 @@
         "pending": 38,
         "sold_rate": 42.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "宝峰",
@@ -1675,7 +1675,7 @@
         "pending": 2,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "帝汇豪庭",
@@ -1692,7 +1692,7 @@
         "pending": 42,
         "sold_rate": 43.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "应天",
@@ -1709,7 +1709,7 @@
         "pending": 50,
         "sold_rate": 9.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "罗便臣道80号",
@@ -1726,7 +1726,7 @@
         "pending": 33,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Kennedy 38",
@@ -1743,7 +1743,7 @@
         "pending": 25,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "吉喆",
@@ -1794,7 +1794,7 @@
         "pending": 11,
         "sold_rate": 84.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "皇府湾",
@@ -1811,7 +1811,7 @@
         "pending": 26,
         "sold_rate": 14.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "寿臣山15号",
@@ -1828,7 +1828,7 @@
         "pending": 1,
         "sold_rate": 73.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "No.3 Repulse Bay Road",
@@ -1845,7 +1845,7 @@
         "pending": 12,
         "sold_rate": 71.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Shouson Peak",
@@ -1896,7 +1896,7 @@
         "pending": 34,
         "sold_rate": 37.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Mount Nicholson I",
@@ -1913,7 +1913,7 @@
         "pending": 1,
         "sold_rate": 94.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Mount Nicholson II",
@@ -1930,7 +1930,7 @@
         "pending": 1,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Twelve Peaks",
@@ -1981,7 +1981,7 @@
         "pending": 143,
         "sold_rate": 59.1
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "峻誉．渣甸山",
@@ -1998,7 +1998,7 @@
         "pending": 37,
         "sold_rate": 37.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "皇第",
@@ -2015,7 +2015,7 @@
         "pending": 2,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Woodis",
@@ -2032,7 +2032,7 @@
         "pending": 57,
         "sold_rate": 62.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "活道1号",
@@ -2083,7 +2083,7 @@
         "pending": 5,
         "sold_rate": 91.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "远晴",
@@ -2117,7 +2117,7 @@
         "pending": 102,
         "sold_rate": 13.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "15 Western Street",
@@ -2134,7 +2134,7 @@
         "pending": 0,
         "sold_rate": 99.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "42 Tung St.",
@@ -2202,7 +2202,7 @@
         "pending": 18,
         "sold_rate": 59.8
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Solace",
@@ -2219,7 +2219,7 @@
         "pending": 2,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "海天径 1号, 舂磡角道 44, 46, 48, 50号",
@@ -2236,7 +2236,7 @@
         "pending": 5,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "339 Tai Hang Road",
@@ -2270,7 +2270,7 @@
         "pending": 6,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Blue Coast",
@@ -2287,7 +2287,7 @@
         "pending": 0,
         "sold_rate": 97.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Blue Coast II",
@@ -2311,7 +2311,7 @@
       "region": "港岛",
       "district": "香港仔及鸭脷洲",
       "filename": "港岛-香港仔及鸭脷洲-Deep Water South 第6A期.xlsx",
-      "file_size_kb": 40.6,
+      "file_size_kb": 40.7,
       "stats": {
         "total": 463,
         "sold": 165,
@@ -2321,7 +2321,7 @@
         "pending": 218,
         "sold_rate": 35.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Deep Water South 第6B期",
@@ -2338,7 +2338,7 @@
         "pending": 80,
         "sold_rate": 19.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "PORTO",
@@ -2355,7 +2355,7 @@
         "pending": 34,
         "sold_rate": 36.8
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "弦岸",
@@ -2372,14 +2372,14 @@
         "pending": 5,
         "sold_rate": 74.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "扬海",
       "region": "港岛",
       "district": "香港仔及鸭脷洲",
       "filename": "港岛-香港仔及鸭脷洲-扬海.xlsx",
-      "file_size_kb": 47.5,
+      "file_size_kb": 56.5,
       "stats": {
         "total": 600,
         "sold": 589,
@@ -2389,7 +2389,7 @@
         "pending": 6,
         "sold_rate": 98.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "晋环",
@@ -2423,7 +2423,7 @@
         "pending": 45,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "海盈山第4B期",
@@ -2440,7 +2440,7 @@
         "pending": 237,
         "sold_rate": 22.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "滶晨 II",
@@ -2457,7 +2457,7 @@
         "pending": 0,
         "sold_rate": 95.5
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "澄天",
@@ -2491,7 +2491,7 @@
         "pending": 38,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "逸南",
@@ -2508,7 +2508,7 @@
         "pending": 24,
         "sold_rate": 65.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "君豪峰",
@@ -2542,7 +2542,7 @@
         "pending": 143,
         "sold_rate": 36.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "Eight Kwai Fong Happy Valley",
@@ -2559,7 +2559,7 @@
         "pending": 91,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "蓝塘道23-39号",
@@ -2576,14 +2576,14 @@
         "pending": 2,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     },
     {
       "name": "滶晨",
       "region": "港岛",
       "district": "黄竹坑",
       "filename": "港岛-黄竹坑-滶晨.xlsx",
-      "file_size_kb": 41.8,
+      "file_size_kb": 41.9,
       "stats": {
         "total": 447,
         "sold": 430,
@@ -2593,7 +2593,7 @@
         "pending": 0,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-15"
     }
   ]
 }
