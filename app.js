@@ -180,6 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
       renderProjects();
     });
 
+
+
     // 模态弹窗关闭事件
     closeModalBtn.addEventListener('click', closePreviewModal);
     
