@@ -2,12 +2,12 @@
   "global_stats": {
     "total_projects": 152,
     "total_units": 40115,
-    "total_sold": 29037,
-    "total_sale": 1706,
+    "total_sold": 29039,
+    "total_sale": 1704,
     "total_priced": 642,
     "total_stopped": 567,
     "total_pending": 8163,
-    "last_updated": "2026-07-21 10:36:51",
+    "last_updated": "2026-07-21 10:46:08",
     "overall_sold_rate": 72.4
   },
   "projects": [
@@ -1121,17 +1121,17 @@
       "region": "九龙",
       "district": "红磡",
       "filename": "九龙-红磡-必嘉坊．曦汇.xlsx",
-      "file_size_kb": 26.9,
+      "file_size_kb": 31.1,
       "stats": {
         "total": 324,
-        "sold": 273,
-        "sale": 51,
+        "sold": 275,
+        "sale": 49,
         "priced": 0,
         "stopped": 0,
         "pending": 0,
-        "sold_rate": 84.3
+        "sold_rate": 84.9
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-21"
     },
     {
       "name": "必嘉坊．迎汇",
