@@ -643,6 +643,7 @@ document.addEventListener('DOMContentLoaded', () => {
               discPrice: row["折实总价 (港币)"],
               discFtPrice: row["折实呎价 (港币/呎)"],
               payment: row["付款办法"],
+              extraRebate: row["额外回赠/补贴"],
               isTender: row["是否招标"] === '是',
               status: row["销控状态"]
             };
@@ -1034,6 +1035,16 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         paymentCont.style.display = 'none';
       }
+      
+      const rebateCont = document.getElementById('selectedUnitRebateContainer');
+      if (rebateCont) {
+        if (u.extraRebate && u.extraRebate !== '-') {
+          rebateCont.style.display = 'flex';
+          document.getElementById('selectedUnitRebate').textContent = u.extraRebate;
+        } else {
+          rebateCont.style.display = 'none';
+        }
+      }
     } 
     else {
       origPriceCont.style.display = 'none';
@@ -1045,6 +1056,8 @@ document.addEventListener('DOMContentLoaded', () => {
       origFtPriceCont.style.display = 'none';
       discFtPriceCont.style.display = 'none';
       paymentCont.style.display = 'none';
+      const rebateCont = document.getElementById('selectedUnitRebateContainer');
+      if (rebateCont) rebateCont.style.display = 'none';
     }
 
     // 控制第二行的整体显示与隐藏以及各分割线的自适应显隐

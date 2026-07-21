@@ -7,7 +7,7 @@
     "total_priced": 642,
     "total_stopped": 567,
     "total_pending": 8163,
-    "last_updated": "2026-07-21 09:22:16",
+    "last_updated": "2026-07-21 09:51:15",
     "overall_sold_rate": 72.4
   },
   "projects": [
@@ -730,7 +730,7 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-天玺．天第2期.xlsx",
-      "file_size_kb": 51.6,
+      "file_size_kb": 53.6,
       "stats": {
         "total": 584,
         "sold": 212,
@@ -740,7 +740,7 @@
         "pending": 271,
         "sold_rate": 36.3
       },
-      "last_updated": "2026-07-15"
+      "last_updated": "2026-07-21"
     },
     {
       "name": "天玺．海第1期",
