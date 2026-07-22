@@ -7,7 +7,7 @@
     "total_priced": 627,
     "total_stopped": 573,
     "total_pending": 8137,
-    "last_updated": "2026-07-22 16:59:23",
+    "last_updated": "2026-07-22 17:27:54",
     "overall_sold_rate": 72.5
   },
   "projects": [
@@ -2828,10 +2828,10 @@
       "is_registration": false
     },
     {
-      "name": "One stanley",
+      "name": "One Stanley",
       "region": "港岛",
       "district": "赤柱",
-      "filename": "港岛-赤柱-One stanley.xlsx",
+      "filename": "港岛-赤柱-One Stanley.xlsx",
       "file_size_kb": 22.0,
       "stats": {
         "total": 78,
