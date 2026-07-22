@@ -2,12 +2,12 @@
   "global_stats": {
     "total_projects": 153,
     "total_units": 40094,
-    "total_sold": 29062,
-    "total_sale": 1695,
+    "total_sold": 29063,
+    "total_sale": 1694,
     "total_priced": 627,
     "total_stopped": 573,
     "total_pending": 8137,
-    "last_updated": "2026-07-22 16:26:36",
+    "last_updated": "2026-07-22 16:35:37",
     "overall_sold_rate": 72.5
   },
   "projects": [
@@ -475,17 +475,17 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-Double Coast I.xlsx",
-      "file_size_kb": 30.7,
+      "file_size_kb": 39.2,
       "stats": {
         "total": 361,
-        "sold": 344,
-        "sale": 17,
+        "sold": 345,
+        "sale": 16,
         "priced": 0,
         "stopped": 0,
         "pending": 0,
-        "sold_rate": 95.3
+        "sold_rate": 95.6
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-22"
     },
     {
       "name": "Double Coast III",
