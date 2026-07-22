@@ -1,14 +1,14 @@
 {
   "global_stats": {
     "total_projects": 153,
-    "total_units": 40454,
-    "total_sold": 29400,
+    "total_units": 40094,
+    "total_sold": 29062,
     "total_sale": 1695,
-    "total_priced": 639,
+    "total_priced": 627,
     "total_stopped": 573,
-    "total_pending": 8147,
-    "last_updated": "2026-07-22 11:58:05",
-    "overall_sold_rate": 72.7
+    "total_pending": 8137,
+    "last_updated": "2026-07-22 14:35:39",
+    "overall_sold_rate": 72.5
   },
   "projects": [
     {
@@ -1240,15 +1240,15 @@
       "region": "九龙",
       "district": "红磡",
       "filename": "九龙-红磡-首汇.xlsx",
-      "file_size_kb": 52.2,
+      "file_size_kb": 27.2,
       "stats": {
-        "total": 601,
-        "sold": 555,
+        "total": 241,
+        "sold": 217,
         "sale": 20,
-        "priced": 14,
+        "priced": 2,
         "stopped": 1,
-        "pending": 11,
-        "sold_rate": 92.3
+        "pending": 1,
+        "sold_rate": 90.0
       },
       "last_updated": "2026-07-22"
     },
