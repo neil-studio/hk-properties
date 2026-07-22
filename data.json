@@ -7,7 +7,7 @@
     "total_priced": 627,
     "total_stopped": 573,
     "total_pending": 8137,
-    "last_updated": "2026-07-22 15:01:47",
+    "last_updated": "2026-07-22 16:26:36",
     "overall_sold_rate": 72.5
   },
   "projects": [
@@ -2379,7 +2379,7 @@
       "region": "港岛",
       "district": "香港仔及鸭脷洲",
       "filename": "港岛-香港仔及鸭脷洲-弦岸.xlsx",
-      "file_size_kb": 15.3,
+      "file_size_kb": 16.0,
       "stats": {
         "total": 105,
         "sold": 78,
