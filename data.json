@@ -7,7 +7,7 @@
     "total_priced": 627,
     "total_stopped": 573,
     "total_pending": 8137,
-    "last_updated": "2026-07-22 16:35:37",
+    "last_updated": "2026-07-22 16:42:11",
     "overall_sold_rate": 72.5
   },
   "projects": [
@@ -2056,7 +2056,7 @@
       "region": "港岛",
       "district": "筲箕湾",
       "filename": "港岛-筲箕湾-One Eighty.xlsx",
-      "file_size_kb": 10.3,
+      "file_size_kb": 11.9,
       "stats": {
         "total": 57,
         "sold": 41,
@@ -2066,7 +2066,7 @@
         "pending": 0,
         "sold_rate": 71.9
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-22"
     },
     {
       "name": "傲华",
