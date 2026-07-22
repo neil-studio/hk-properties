@@ -7,7 +7,7 @@
     "total_priced": 627,
     "total_stopped": 573,
     "total_pending": 8137,
-    "last_updated": "2026-07-22 16:42:11",
+    "last_updated": "2026-07-22 16:45:25",
     "overall_sold_rate": 72.5
   },
   "projects": [
@@ -1036,7 +1036,7 @@
       "region": "九龙",
       "district": "旺角",
       "filename": "九龙-旺角-映居.xlsx",
-      "file_size_kb": 13.9,
+      "file_size_kb": 16.8,
       "stats": {
         "total": 122,
         "sold": 107,
@@ -1046,7 +1046,7 @@
         "pending": 0,
         "sold_rate": 87.7
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-22"
     },
     {
       "name": "原舍",
