@@ -1,13 +1,13 @@
 {
   "global_stats": {
     "total_projects": 153,
-    "total_units": 40094,
-    "total_sold": 29063,
-    "total_sale": 1694,
+    "total_units": 40098,
+    "total_sold": 29066,
+    "total_sale": 1695,
     "total_priced": 627,
     "total_stopped": 573,
     "total_pending": 8137,
-    "last_updated": "2026-07-22 17:27:54",
+    "last_updated": "2026-07-22 19:03:07",
     "overall_sold_rate": 72.5
   },
   "projects": [
@@ -2832,15 +2832,15 @@
       "region": "港岛",
       "district": "赤柱",
       "filename": "港岛-赤柱-One Stanley.xlsx",
-      "file_size_kb": 22.0,
+      "file_size_kb": 24.2,
       "stats": {
-        "total": 78,
-        "sold": 47,
-        "sale": 11,
+        "total": 82,
+        "sold": 50,
+        "sale": 12,
         "priced": 2,
         "stopped": 1,
         "pending": 17,
-        "sold_rate": 60.3
+        "sold_rate": 61.0
       },
       "last_updated": "2026-07-22",
       "sell_status": "on_sale",
