@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 动态生成项目卡片
     filtered.forEach(proj => {
       const card = document.createElement('article');
-      card.className = 'project-card';
+      card.className = 'project-card' + (proj.is_suspended ? ' suspended-card' : '');
       
       const stats = proj.stats || { total: 0, sold: 0, sale: 0, priced: 0, stopped: 0, pending: 0, sold_rate: 0 };
       
@@ -321,12 +321,28 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (proj.grade === 'A') gradeClass = 'grade-a';
       else if (proj.grade === 'B') gradeClass = 'grade-b';
 
+      let statusBadge = '';
+      if (proj.is_suspended) {
+        statusBadge = '<span class="badge badge-suspended">⛔ 暂停销售</span>';
+      } else if (proj.is_coming_soon) {
+        statusBadge = '<span class="badge badge-coming-soon">🕒 即将发售</span>';
+      } else if (proj.is_registration) {
+        statusBadge = '<span class="badge badge-registration">📝 意向登记</span>';
+      }
+
+      let suspendedBanner = '';
+      if (proj.is_suspended) {
+        suspendedBanner = '<div class="card-suspended-banner">⛔ 官方暂停销售 (Sales Suspended)</div>';
+      }
+
       card.innerHTML = `
+        ${suspendedBanner}
         <div class="grade-badge ${gradeClass}">${proj.grade || 'C'}</div>
         <div class="card-header">
           <div class="card-meta">
             <span class="badge badge-region">${proj.region}</span>
             <span class="badge badge-district">${proj.district}</span>
+            ${statusBadge}
           </div>
           <h3 class="project-title">${proj.name}</h3>
         </div>
