@@ -7,7 +7,7 @@
     "total_priced": 627,
     "total_stopped": 573,
     "total_pending": 8137,
-    "last_updated": "2026-07-22 16:45:25",
+    "last_updated": "2026-07-22 16:59:23",
     "overall_sold_rate": 72.5
   },
   "projects": [
@@ -26,7 +26,12 @@
         "pending": 0,
         "sold_rate": 81.8
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "The Monet 第1期",
@@ -43,7 +48,12 @@
         "pending": 73,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "The Monet 第2期",
@@ -60,7 +70,12 @@
         "pending": 14,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "The Monet 第3期",
@@ -77,7 +92,12 @@
         "pending": 23,
         "sold_rate": 50.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "博峰",
@@ -94,7 +114,12 @@
         "pending": 46,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "喇沙汇",
@@ -111,7 +136,12 @@
         "pending": 0,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "皇廷汇",
@@ -128,7 +158,12 @@
         "pending": 0,
         "sold_rate": 75.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "缇外",
@@ -145,7 +180,12 @@
         "pending": 11,
         "sold_rate": 81.2
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天玺",
@@ -162,7 +202,12 @@
         "pending": 37,
         "sold_rate": 94.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "高临",
@@ -179,7 +224,12 @@
         "pending": 0,
         "sold_rate": 99.6
       },
-      "last_updated": "2026-07-15"
+      "last_updated": "2026-07-15",
+      "sell_status": "sold_out",
+      "sell_status_cn": "已售罄",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "128 Waterloo",
@@ -196,7 +246,12 @@
         "pending": 4,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Prince Central",
@@ -213,7 +268,12 @@
         "pending": 21,
         "sold_rate": 28.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "VAU Residence",
@@ -230,7 +290,12 @@
         "pending": 0,
         "sold_rate": 93.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "st. george's mansions",
@@ -247,7 +312,12 @@
         "pending": 1,
         "sold_rate": 91.4
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "傲玟",
@@ -264,7 +334,12 @@
         "pending": 54,
         "sold_rate": 83.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "名钻",
@@ -281,7 +356,12 @@
         "pending": 2,
         "sold_rate": 92.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天铸 (第2期)",
@@ -298,7 +378,12 @@
         "pending": 2,
         "sold_rate": 99.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "太子道西233号",
@@ -315,7 +400,12 @@
         "pending": 0,
         "sold_rate": 93.3
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "明寓",
@@ -332,7 +422,12 @@
         "pending": 0,
         "sold_rate": 88.9
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "朗贤峰第IIA期",
@@ -349,7 +444,12 @@
         "pending": 143,
         "sold_rate": 38.8
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "朗贤峰第IIB期",
@@ -366,7 +466,12 @@
         "pending": 0,
         "sold_rate": 95.6
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "瑜一第IC期",
@@ -383,7 +488,12 @@
         "pending": 0,
         "sold_rate": 98.6
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "瑜一．天海",
@@ -400,7 +510,12 @@
         "pending": 25,
         "sold_rate": 81.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "耀爵台",
@@ -417,7 +532,12 @@
         "pending": 0,
         "sold_rate": 78.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "芳菲",
@@ -434,7 +554,12 @@
         "pending": 0,
         "sold_rate": 45.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "誉林",
@@ -451,7 +576,12 @@
         "pending": 0,
         "sold_rate": 80.4
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "隆敍",
@@ -468,7 +598,12 @@
         "pending": 45,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Double Coast I",
@@ -485,7 +620,12 @@
         "pending": 0,
         "sold_rate": 95.6
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Double Coast III",
@@ -502,7 +642,12 @@
         "pending": 299,
         "sold_rate": 41.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Henley Park",
@@ -519,7 +664,12 @@
         "pending": 135,
         "sold_rate": 66.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Miami Quay I",
@@ -536,7 +686,12 @@
         "pending": 178,
         "sold_rate": 64.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Miami Quay II",
@@ -553,7 +708,12 @@
         "pending": 443,
         "sold_rate": 19.8
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Monaco Marine",
@@ -570,7 +730,12 @@
         "pending": 0,
         "sold_rate": 99.3
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Monaco One",
@@ -587,7 +752,12 @@
         "pending": 0,
         "sold_rate": 99.8
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Monaco 第1期",
@@ -604,7 +774,12 @@
         "pending": 0,
         "sold_rate": 99.5
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "The Henley I",
@@ -621,7 +796,12 @@
         "pending": 0,
         "sold_rate": 83.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "The Henley II",
@@ -638,7 +818,12 @@
         "pending": 3,
         "sold_rate": 87.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "The Henley III",
@@ -655,7 +840,12 @@
         "pending": 52,
         "sold_rate": 73.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "启德海湾 1",
@@ -672,7 +862,12 @@
         "pending": 9,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "启德海湾 2",
@@ -689,7 +884,12 @@
         "pending": 715,
         "sold_rate": 24.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天泷",
@@ -706,7 +906,12 @@
         "pending": 215,
         "sold_rate": 54.4
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天玺．天",
@@ -723,7 +928,12 @@
         "pending": 0,
         "sold_rate": 97.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天玺．天第2期",
@@ -740,7 +950,12 @@
         "pending": 251,
         "sold_rate": 37.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天玺．海第1期",
@@ -757,7 +972,12 @@
         "pending": 118,
         "sold_rate": 39.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天玺．海第2A期",
@@ -774,7 +994,12 @@
         "pending": 24,
         "sold_rate": 39.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天玺．海第2B期",
@@ -791,7 +1016,12 @@
         "pending": 130,
         "sold_rate": 2.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "柏蔚森 I",
@@ -808,7 +1038,12 @@
         "pending": 0,
         "sold_rate": 91.8
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "柏蔚森 II",
@@ -825,7 +1060,12 @@
         "pending": 194,
         "sold_rate": 60.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "柏蔚森 III",
@@ -842,7 +1082,12 @@
         "pending": 18,
         "sold_rate": 86.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "沄璟",
@@ -859,7 +1104,12 @@
         "pending": 79,
         "sold_rate": 82.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "维港1号",
@@ -876,7 +1126,12 @@
         "pending": 0,
         "sold_rate": 99.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "维港．双钻",
@@ -893,7 +1148,12 @@
         "pending": 181,
         "sold_rate": 53.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "维港．湾畔第1A期",
@@ -910,7 +1170,12 @@
         "pending": 438,
         "sold_rate": 24.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "维港．湾畔第1B期",
@@ -927,7 +1192,12 @@
         "pending": 332,
         "sold_rate": 33.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "维港．湾畔第2B期",
@@ -944,7 +1214,12 @@
         "pending": 473,
         "sold_rate": 6.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "本木",
@@ -961,7 +1236,12 @@
         "pending": 0,
         "sold_rate": 95.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "The Boundary",
@@ -978,7 +1258,12 @@
         "pending": 58,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "Upper Prince",
@@ -995,7 +1280,12 @@
         "pending": 137,
         "sold_rate": 1.4
       },
-      "last_updated": "2026-07-15"
+      "last_updated": "2026-07-15",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "利奥坊．凯岸",
@@ -1012,7 +1302,12 @@
         "pending": 1,
         "sold_rate": 99.6
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "利奥坊．曦岸",
@@ -1029,7 +1324,12 @@
         "pending": 0,
         "sold_rate": 99.8
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "映居",
@@ -1046,7 +1346,12 @@
         "pending": 0,
         "sold_rate": 87.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "原舍",
@@ -1063,7 +1368,12 @@
         "pending": 54,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Beacon Peak 第1期",
@@ -1080,7 +1390,12 @@
         "pending": 184,
         "sold_rate": 38.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "滶蕴",
@@ -1097,7 +1412,12 @@
         "pending": 0,
         "sold_rate": 56.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "The Haddon",
@@ -1114,7 +1434,12 @@
         "pending": 0,
         "sold_rate": 98.5
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "必嘉坊．曦汇",
@@ -1131,7 +1456,12 @@
         "pending": 0,
         "sold_rate": 84.9
       },
-      "last_updated": "2026-07-21"
+      "last_updated": "2026-07-21",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "必嘉坊．迎汇",
@@ -1148,7 +1478,12 @@
         "pending": 0,
         "sold_rate": 97.5
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "悦麓",
@@ -1165,7 +1500,12 @@
         "pending": 2,
         "sold_rate": 74.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "首岸第1期",
@@ -1182,7 +1522,12 @@
         "pending": 10,
         "sold_rate": 93.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "首岸第2期",
@@ -1199,7 +1544,12 @@
         "pending": 384,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "首岸第3期",
@@ -1216,7 +1566,12 @@
         "pending": 10,
         "sold_rate": 84.4
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "首岸第4期",
@@ -1233,7 +1588,12 @@
         "pending": 124,
         "sold_rate": 31.8
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "首汇",
@@ -1250,7 +1610,12 @@
         "pending": 1,
         "sold_rate": 90.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "汇玺III",
@@ -1267,7 +1632,12 @@
         "pending": 11,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "维港汇 I",
@@ -1284,7 +1654,12 @@
         "pending": 0,
         "sold_rate": 98.5
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "维港汇 III",
@@ -1301,7 +1676,12 @@
         "pending": 0,
         "sold_rate": 99.2
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "南首",
@@ -1318,7 +1698,12 @@
         "pending": 0,
         "sold_rate": 97.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "壹沐第1期",
@@ -1335,7 +1720,12 @@
         "pending": 0,
         "sold_rate": 99.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "壹沐第2期",
@@ -1352,7 +1742,12 @@
         "pending": 69,
         "sold_rate": 67.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "文曜",
@@ -1369,7 +1764,12 @@
         "pending": 9,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "瑧博",
@@ -1386,7 +1786,12 @@
         "pending": 0,
         "sold_rate": 99.2
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "101 Kings Road",
@@ -1403,7 +1808,12 @@
         "pending": 0,
         "sold_rate": 96.8
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "君誉峰",
@@ -1420,7 +1830,12 @@
         "pending": 0,
         "sold_rate": 96.8
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "嘉居．天后",
@@ -1437,7 +1852,12 @@
         "pending": 0,
         "sold_rate": 97.3
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "柏蔚山",
@@ -1454,7 +1874,12 @@
         "pending": 0,
         "sold_rate": 99.5
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海璇",
@@ -1471,7 +1896,12 @@
         "pending": 177,
         "sold_rate": 40.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海璇 II",
@@ -1488,7 +1918,12 @@
         "pending": 93,
         "sold_rate": 24.4
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海璇 II (第2B-3期)",
@@ -1505,7 +1940,12 @@
         "pending": 174,
         "sold_rate": 23.2
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "雅盈峰",
@@ -1522,7 +1962,12 @@
         "pending": 8,
         "sold_rate": 91.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Central Peak I",
@@ -1539,7 +1984,12 @@
         "pending": 40,
         "sold_rate": 15.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Central Peak II",
@@ -1556,7 +2006,12 @@
         "pending": 15,
         "sold_rate": 15.8
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "21 Borrett Road 第1期",
@@ -1573,7 +2028,12 @@
         "pending": 59,
         "sold_rate": 48.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Mount Pokfulam",
@@ -1590,7 +2050,12 @@
         "pending": 2,
         "sold_rate": 57.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Upper Central",
@@ -1607,7 +2072,12 @@
         "pending": 0,
         "sold_rate": 85.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "大学阁",
@@ -1624,7 +2094,12 @@
         "pending": 23,
         "sold_rate": 69.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天御第1期",
@@ -1641,7 +2116,12 @@
         "pending": 94,
         "sold_rate": 11.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "天御第2期",
@@ -1658,7 +2138,12 @@
         "pending": 38,
         "sold_rate": 42.4
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "宝峰",
@@ -1675,7 +2160,12 @@
         "pending": 2,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "帝汇豪庭",
@@ -1692,7 +2182,12 @@
         "pending": 42,
         "sold_rate": 43.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "应天",
@@ -1709,7 +2204,12 @@
         "pending": 50,
         "sold_rate": 10.6
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "罗便臣道80号",
@@ -1726,7 +2226,12 @@
         "pending": 32,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Kennedy 38",
@@ -1743,7 +2248,12 @@
         "pending": 25,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "吉喆",
@@ -1760,7 +2270,12 @@
         "pending": 7,
         "sold_rate": 96.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "御海园",
@@ -1777,7 +2292,12 @@
         "pending": 19,
         "sold_rate": 42.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海嵎",
@@ -1794,7 +2314,12 @@
         "pending": 11,
         "sold_rate": 84.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "皇府湾",
@@ -1811,7 +2336,12 @@
         "pending": 26,
         "sold_rate": 14.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "寿臣山15号",
@@ -1828,7 +2358,12 @@
         "pending": 1,
         "sold_rate": 73.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "No.3 Repulse Bay Road",
@@ -1845,7 +2380,12 @@
         "pending": 12,
         "sold_rate": 71.4
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Shouson Peak",
@@ -1862,7 +2402,12 @@
         "pending": 0,
         "sold_rate": 96.8
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "浅水湾108",
@@ -1879,7 +2424,12 @@
         "pending": 8,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "深水湾径8号",
@@ -1896,7 +2446,12 @@
         "pending": 34,
         "sold_rate": 37.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Mount Nicholson I",
@@ -1913,7 +2468,12 @@
         "pending": 1,
         "sold_rate": 94.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Mount Nicholson II",
@@ -1930,7 +2490,12 @@
         "pending": 1,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Twelve Peaks",
@@ -1947,7 +2512,12 @@
         "pending": 0,
         "sold_rate": 91.7
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "宾吉道3号",
@@ -1964,7 +2534,12 @@
         "pending": 1,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海德园第1期",
@@ -1981,7 +2556,12 @@
         "pending": 143,
         "sold_rate": 59.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "峻誉．渣甸山",
@@ -1998,7 +2578,12 @@
         "pending": 37,
         "sold_rate": 37.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "皇第",
@@ -2015,7 +2600,12 @@
         "pending": 2,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Woodis",
@@ -2032,7 +2622,12 @@
         "pending": 57,
         "sold_rate": 62.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "活道1号",
@@ -2049,7 +2644,12 @@
         "pending": 0,
         "sold_rate": 97.6
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "One Eighty",
@@ -2066,7 +2666,12 @@
         "pending": 0,
         "sold_rate": 71.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "傲华",
@@ -2083,7 +2688,12 @@
         "pending": 5,
         "sold_rate": 91.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "远晴",
@@ -2100,7 +2710,12 @@
         "pending": 0,
         "sold_rate": 69.4
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Victoria Coast",
@@ -2117,7 +2732,12 @@
         "pending": 102,
         "sold_rate": 13.6
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "15 Western Street",
@@ -2134,7 +2754,12 @@
         "pending": 0,
         "sold_rate": 99.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "42 Tung St.",
@@ -2151,7 +2776,12 @@
         "pending": 0,
         "sold_rate": 84.6
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "尚逸",
@@ -2168,7 +2798,12 @@
         "pending": 0,
         "sold_rate": 99.4
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "50 Stanley Village Road",
@@ -2185,7 +2820,12 @@
         "pending": 0,
         "sold_rate": 91.7
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "One stanley",
@@ -2202,7 +2842,12 @@
         "pending": 17,
         "sold_rate": 60.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Solace",
@@ -2219,7 +2864,12 @@
         "pending": 2,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海天径 1号, 舂磡角道 44, 46, 48, 50号",
@@ -2236,7 +2886,12 @@
         "pending": 5,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "环角道7号、9号及11号",
@@ -2253,7 +2908,12 @@
         "pending": 1,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-21"
+      "last_updated": "2026-07-21",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "339 Tai Hang Road",
@@ -2270,7 +2930,12 @@
         "pending": 0,
         "sold_rate": 88.9
       },
-      "last_updated": "2026-07-14"
+      "last_updated": "2026-07-14",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "宏丰台10号",
@@ -2287,7 +2952,12 @@
         "pending": 6,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "Blue Coast",
@@ -2304,7 +2974,12 @@
         "pending": 0,
         "sold_rate": 97.5
       },
-      "last_updated": "2026-07-21"
+      "last_updated": "2026-07-21",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Blue Coast II",
@@ -2321,7 +2996,12 @@
         "pending": 0,
         "sold_rate": 98.6
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Deep Water South 第6A期",
@@ -2338,7 +3018,12 @@
         "pending": 218,
         "sold_rate": 35.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Deep Water South 第6B期",
@@ -2355,7 +3040,12 @@
         "pending": 80,
         "sold_rate": 19.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "PORTO",
@@ -2372,7 +3062,12 @@
         "pending": 34,
         "sold_rate": 36.8
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "弦岸",
@@ -2389,7 +3084,12 @@
         "pending": 5,
         "sold_rate": 74.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "扬海",
@@ -2406,7 +3106,12 @@
         "pending": 6,
         "sold_rate": 98.2
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "晋环",
@@ -2423,7 +3128,12 @@
         "pending": 0,
         "sold_rate": 99.9
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海盈山第4A期",
@@ -2440,7 +3150,12 @@
         "pending": 45,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "海盈山第4B期",
@@ -2457,7 +3172,12 @@
         "pending": 237,
         "sold_rate": 23.1
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "滶晨 II",
@@ -2474,7 +3194,12 @@
         "pending": 0,
         "sold_rate": 95.5
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "澄天",
@@ -2491,7 +3216,12 @@
         "pending": 0,
         "sold_rate": 99.1
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "sold_out",
+      "sell_status_cn": "已售罄",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "璟南",
@@ -2508,7 +3238,12 @@
         "pending": 38,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "coming_soon",
+      "sell_status_cn": "即將發售",
+      "is_suspended": false,
+      "is_coming_soon": true,
+      "is_registration": false
     },
     {
       "name": "逸南",
@@ -2525,7 +3260,12 @@
         "pending": 24,
         "sold_rate": 65.9
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "君豪峰",
@@ -2542,7 +3282,12 @@
         "pending": 0,
         "sold_rate": 98.1
       },
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-09",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "凯玥",
@@ -2559,7 +3304,12 @@
         "pending": 143,
         "sold_rate": 36.6
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "Eight Kwai Fong Happy Valley",
@@ -2576,7 +3326,12 @@
         "pending": 91,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "sales_suspended",
+      "sell_status_cn": "暫停銷售",
+      "is_suspended": true,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "蓝塘道23-39号",
@@ -2593,7 +3348,12 @@
         "pending": 2,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     },
     {
       "name": "滶晨",
@@ -2610,7 +3370,12 @@
         "pending": 0,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-22"
+      "last_updated": "2026-07-22",
+      "sell_status": "on_sale",
+      "sell_status_cn": "出售中",
+      "is_suspended": false,
+      "is_coming_soon": false,
+      "is_registration": false
     }
   ]
 }

@@ -2076,3 +2076,64 @@ body {
   font-weight: bold;
   font-size: 0.8rem;
 }
+
+/* ==========================================================================
+   方案二：暂停销售项目警示条幅 Banner 与卡片高亮样式
+   ========================================================================== */
+.project-card.suspended-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(234, 179, 8, 0.6) !important;
+  box-shadow: 0 0 16px rgba(234, 179, 8, 0.2) !important;
+  background: linear-gradient(180deg, rgba(234, 179, 8, 0.08) 0%, rgba(15, 23, 42, 0.95) 100%) !important;
+}
+
+.project-card.suspended-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(135deg, rgba(234, 179, 8, 0.03), rgba(234, 179, 8, 0.03) 15px, transparent 15px, transparent 30px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card-suspended-banner {
+  background: linear-gradient(90deg, #eab308, #ca8a04);
+  color: #000000;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  padding: 0.35rem 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: -1.25rem -1.25rem 0.85rem -1.25rem;
+  box-shadow: 0 2px 8px rgba(234, 179, 8, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  z-index: 2;
+  position: relative;
+}
+
+.badge-suspended {
+  background: rgba(234, 179, 8, 0.2) !important;
+  color: #fef08a !important;
+  border: 1px solid rgba(234, 179, 8, 0.5) !important;
+  font-weight: 700 !important;
+}
+
+.badge-coming-soon {
+  background: rgba(96, 165, 250, 0.2) !important;
+  color: #60a5fa !important;
+  border: 1px solid rgba(96, 165, 250, 0.5) !important;
+}
+
+.badge-registration {
+  background: rgba(168, 85, 247, 0.2) !important;
+  color: #c084fc !important;
+  border: 1px solid rgba(168, 85, 247, 0.5) !important;
+}
