@@ -1,14 +1,14 @@
 {
   "global_stats": {
     "total_projects": 153,
-    "total_units": 40098,
-    "total_sold": 29066,
-    "total_sale": 1695,
-    "total_priced": 627,
-    "total_stopped": 573,
-    "total_pending": 8137,
-    "last_updated": "2026-07-22 19:03:07",
-    "overall_sold_rate": 72.5
+    "total_units": 39412,
+    "total_sold": 28515,
+    "total_sale": 1650,
+    "total_priced": 715,
+    "total_stopped": 582,
+    "total_pending": 7950,
+    "last_updated": "2026-07-24 09:50:19",
+    "overall_sold_rate": 72.4
   },
   "projects": [
     {
@@ -16,7 +16,7 @@
       "region": "九龙",
       "district": "九龙塘",
       "filename": "九龙-九龙塘-Park College.xlsx",
-      "file_size_kb": 7.4,
+      "file_size_kb": 7.7,
       "stats": {
         "total": 11,
         "sold": 9,
@@ -26,7 +26,7 @@
         "pending": 0,
         "sold_rate": 81.8
       },
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -48,7 +48,7 @@
         "pending": 73,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -70,7 +70,7 @@
         "pending": 14,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -92,7 +92,7 @@
         "pending": 23,
         "sold_rate": 50.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -114,7 +114,7 @@
         "pending": 46,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -180,7 +180,7 @@
         "pending": 11,
         "sold_rate": 81.2
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -246,7 +246,7 @@
         "pending": 4,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -268,7 +268,7 @@
         "pending": 21,
         "sold_rate": 28.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -290,7 +290,7 @@
         "pending": 0,
         "sold_rate": 93.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -312,7 +312,7 @@
         "pending": 1,
         "sold_rate": 91.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -328,13 +328,13 @@
       "stats": {
         "total": 401,
         "sold": 335,
-        "sale": 10,
-        "priced": 1,
+        "sale": 11,
+        "priced": 0,
         "stopped": 1,
         "pending": 54,
         "sold_rate": 83.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -356,7 +356,7 @@
         "pending": 2,
         "sold_rate": 92.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -378,7 +378,7 @@
         "pending": 2,
         "sold_rate": 99.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -444,7 +444,7 @@
         "pending": 143,
         "sold_rate": 38.8
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "sales_suspended",
       "sell_status_cn": "暫停銷售",
       "is_suspended": true,
@@ -456,17 +456,17 @@
       "region": "九龙",
       "district": "何文田",
       "filename": "九龙-何文田-朗贤峰第IIB期.xlsx",
-      "file_size_kb": 52.3,
+      "file_size_kb": 41.0,
       "stats": {
-        "total": 572,
-        "sold": 547,
+        "total": 429,
+        "sold": 405,
         "sale": 0,
         "priced": 0,
-        "stopped": 25,
+        "stopped": 24,
         "pending": 0,
-        "sold_rate": 95.6
+        "sold_rate": 94.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "sales_suspended",
       "sell_status_cn": "暫停銷售",
       "is_suspended": true,
@@ -505,12 +505,12 @@
         "total": 447,
         "sold": 365,
         "sale": 44,
-        "priced": 2,
-        "stopped": 11,
+        "priced": 6,
+        "stopped": 7,
         "pending": 25,
         "sold_rate": 81.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -554,7 +554,7 @@
         "pending": 0,
         "sold_rate": 45.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -566,17 +566,17 @@
       "region": "九龙",
       "district": "何文田",
       "filename": "九龙-何文田-誉林.xlsx",
-      "file_size_kb": 10.4,
+      "file_size_kb": 11.6,
       "stats": {
         "total": 56,
-        "sold": 45,
-        "sale": 11,
+        "sold": 46,
+        "sale": 10,
         "priced": 0,
         "stopped": 0,
         "pending": 0,
-        "sold_rate": 80.4
+        "sold_rate": 82.1
       },
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-22",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -598,7 +598,7 @@
         "pending": 45,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -642,7 +642,7 @@
         "pending": 299,
         "sold_rate": 41.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -654,17 +654,17 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-Henley Park.xlsx",
-      "file_size_kb": 65.1,
+      "file_size_kb": 44.5,
       "stats": {
-        "total": 720,
-        "sold": 482,
-        "sale": 57,
+        "total": 425,
+        "sold": 310,
+        "sale": 30,
         "priced": 46,
         "stopped": 0,
-        "pending": 135,
-        "sold_rate": 66.9
+        "pending": 39,
+        "sold_rate": 72.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -676,17 +676,17 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-Miami Quay I.xlsx",
-      "file_size_kb": 55.6,
+      "file_size_kb": 57.6,
       "stats": {
         "total": 648,
         "sold": 415,
         "sale": 45,
-        "priced": 4,
-        "stopped": 6,
-        "pending": 178,
+        "priced": 86,
+        "stopped": 3,
+        "pending": 99,
         "sold_rate": 64.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -701,14 +701,14 @@
       "file_size_kb": 43.3,
       "stats": {
         "total": 571,
-        "sold": 113,
-        "sale": 15,
+        "sold": 114,
+        "sale": 14,
         "priced": 0,
         "stopped": 0,
         "pending": 443,
-        "sold_rate": 19.8
+        "sold_rate": 20.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -796,7 +796,7 @@
         "pending": 0,
         "sold_rate": 83.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -811,14 +811,14 @@
       "file_size_kb": 30.3,
       "stats": {
         "total": 301,
-        "sold": 262,
-        "sale": 36,
+        "sold": 263,
+        "sale": 35,
         "priced": 0,
         "stopped": 0,
         "pending": 3,
-        "sold_rate": 87.0
+        "sold_rate": 87.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -840,7 +840,7 @@
         "pending": 52,
         "sold_rate": 73.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -862,7 +862,7 @@
         "pending": 9,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -884,7 +884,7 @@
         "pending": 715,
         "sold_rate": 24.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -906,7 +906,7 @@
         "pending": 215,
         "sold_rate": 54.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -928,7 +928,7 @@
         "pending": 0,
         "sold_rate": 97.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -940,17 +940,17 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-天玺．天第2期.xlsx",
-      "file_size_kb": 51.7,
+      "file_size_kb": 51.8,
       "stats": {
         "total": 584,
         "sold": 220,
-        "sale": 31,
-        "priced": 48,
-        "stopped": 34,
-        "pending": 251,
+        "sale": 20,
+        "priced": 49,
+        "stopped": 48,
+        "pending": 247,
         "sold_rate": 37.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -966,13 +966,13 @@
       "stats": {
         "total": 256,
         "sold": 101,
-        "sale": 8,
-        "priced": 2,
+        "sale": 10,
+        "priced": 0,
         "stopped": 27,
         "pending": 118,
         "sold_rate": 39.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -994,7 +994,7 @@
         "pending": 24,
         "sold_rate": 39.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1016,7 +1016,7 @@
         "pending": 130,
         "sold_rate": 2.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1060,7 +1060,7 @@
         "pending": 194,
         "sold_rate": 60.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1072,7 +1072,7 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-柏蔚森 III.xlsx",
-      "file_size_kb": 27.3,
+      "file_size_kb": 27.2,
       "stats": {
         "total": 264,
         "sold": 229,
@@ -1082,7 +1082,7 @@
         "pending": 18,
         "sold_rate": 86.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1100,11 +1100,11 @@
         "sold": 477,
         "sale": 24,
         "priced": 0,
-        "stopped": 2,
-        "pending": 79,
+        "stopped": 7,
+        "pending": 74,
         "sold_rate": 82.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1116,17 +1116,17 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-维港1号.xlsx",
-      "file_size_kb": 89.0,
+      "file_size_kb": 69.7,
       "stats": {
-        "total": 1059,
-        "sold": 1056,
+        "total": 811,
+        "sold": 808,
         "sale": 0,
-        "priced": 1,
-        "stopped": 2,
+        "priced": 3,
+        "stopped": 0,
         "pending": 0,
-        "sold_rate": 99.7
+        "sold_rate": 99.6
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1148,7 +1148,7 @@
         "pending": 181,
         "sold_rate": 53.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1160,17 +1160,17 @@
       "region": "九龙",
       "district": "启德",
       "filename": "九龙-启德-维港．湾畔第1A期.xlsx",
-      "file_size_kb": 49.7,
+      "file_size_kb": 49.8,
       "stats": {
         "total": 635,
         "sold": 154,
         "sale": 26,
-        "priced": 17,
+        "priced": 19,
         "stopped": 0,
-        "pending": 438,
+        "pending": 436,
         "sold_rate": 24.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1192,7 +1192,7 @@
         "pending": 332,
         "sold_rate": 33.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1207,14 +1207,14 @@
       "file_size_kb": 36.0,
       "stats": {
         "total": 509,
-        "sold": 35,
-        "sale": 1,
+        "sold": 36,
+        "sale": 0,
         "priced": 0,
         "stopped": 0,
         "pending": 473,
-        "sold_rate": 6.9
+        "sold_rate": 7.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1258,7 +1258,7 @@
         "pending": 58,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -1302,7 +1302,7 @@
         "pending": 1,
         "sold_rate": 99.6
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1368,7 +1368,7 @@
         "pending": 54,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1383,14 +1383,14 @@
       "file_size_kb": 35.8,
       "stats": {
         "total": 332,
-        "sold": 126,
-        "sale": 8,
+        "sold": 127,
+        "sale": 7,
         "priced": 14,
         "stopped": 0,
         "pending": 184,
-        "sold_rate": 38.0
+        "sold_rate": 38.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1405,14 +1405,14 @@
       "file_size_kb": 16.5,
       "stats": {
         "total": 109,
-        "sold": 61,
-        "sale": 37,
+        "sold": 62,
+        "sale": 36,
         "priced": 11,
         "stopped": 0,
         "pending": 0,
-        "sold_rate": 56.0
+        "sold_rate": 56.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1493,14 +1493,14 @@
       "file_size_kb": 13.3,
       "stats": {
         "total": 83,
-        "sold": 62,
-        "sale": 17,
+        "sold": 63,
+        "sale": 16,
         "priced": 0,
         "stopped": 2,
         "pending": 2,
-        "sold_rate": 74.7
+        "sold_rate": 75.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1522,7 +1522,7 @@
         "pending": 10,
         "sold_rate": 93.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1544,7 +1544,7 @@
         "pending": 384,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -1566,7 +1566,7 @@
         "pending": 10,
         "sold_rate": 84.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1588,7 +1588,7 @@
         "pending": 124,
         "sold_rate": 31.8
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1600,7 +1600,7 @@
       "region": "九龙",
       "district": "红磡",
       "filename": "九龙-红磡-首汇.xlsx",
-      "file_size_kb": 27.2,
+      "file_size_kb": 25.4,
       "stats": {
         "total": 241,
         "sold": 217,
@@ -1610,7 +1610,7 @@
         "pending": 1,
         "sold_rate": 90.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1632,7 +1632,7 @@
         "pending": 11,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1688,17 +1688,17 @@
       "region": "九龙",
       "district": "马头角",
       "filename": "九龙-马头角-南首.xlsx",
-      "file_size_kb": 30.5,
+      "file_size_kb": 30.4,
       "stats": {
         "total": 313,
-        "sold": 304,
-        "sale": 7,
+        "sold": 305,
+        "sale": 6,
         "priced": 1,
         "stopped": 1,
         "pending": 0,
-        "sold_rate": 97.1
+        "sold_rate": 97.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1720,7 +1720,7 @@
         "pending": 0,
         "sold_rate": 99.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1735,14 +1735,14 @@
       "file_size_kb": 37.4,
       "stats": {
         "total": 415,
-        "sold": 281,
-        "sale": 65,
+        "sold": 282,
+        "sale": 64,
         "priced": 0,
         "stopped": 0,
         "pending": 69,
-        "sold_rate": 67.7
+        "sold_rate": 68.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1764,7 +1764,7 @@
         "pending": 9,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1896,7 +1896,7 @@
         "pending": 177,
         "sold_rate": 40.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1918,7 +1918,7 @@
         "pending": 93,
         "sold_rate": 24.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1940,7 +1940,7 @@
         "pending": 174,
         "sold_rate": 23.2
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1962,7 +1962,7 @@
         "pending": 8,
         "sold_rate": 91.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -1984,7 +1984,7 @@
         "pending": 40,
         "sold_rate": 15.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2006,7 +2006,7 @@
         "pending": 15,
         "sold_rate": 15.8
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2028,7 +2028,7 @@
         "pending": 59,
         "sold_rate": 48.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2050,7 +2050,7 @@
         "pending": 2,
         "sold_rate": 57.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2072,7 +2072,7 @@
         "pending": 0,
         "sold_rate": 85.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2094,7 +2094,7 @@
         "pending": 23,
         "sold_rate": 69.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "sales_suspended",
       "sell_status_cn": "暫停銷售",
       "is_suspended": true,
@@ -2116,7 +2116,7 @@
         "pending": 94,
         "sold_rate": 11.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2128,17 +2128,17 @@
       "region": "港岛",
       "district": "半山区西部",
       "filename": "港岛-半山区西部-天御第2期.xlsx",
-      "file_size_kb": 12.4,
+      "file_size_kb": 12.5,
       "stats": {
         "total": 66,
         "sold": 28,
         "sale": 0,
-        "priced": 0,
+        "priced": 1,
         "stopped": 0,
-        "pending": 38,
+        "pending": 37,
         "sold_rate": 42.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2160,7 +2160,7 @@
         "pending": 2,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2182,7 +2182,7 @@
         "pending": 42,
         "sold_rate": 43.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2204,7 +2204,7 @@
         "pending": 50,
         "sold_rate": 10.6
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2220,13 +2220,13 @@
       "stats": {
         "total": 264,
         "sold": 231,
-        "sale": 0,
-        "priced": 1,
+        "sale": 1,
+        "priced": 0,
         "stopped": 0,
         "pending": 32,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2248,7 +2248,7 @@
         "pending": 25,
         "sold_rate": 89.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2314,7 +2314,7 @@
         "pending": 11,
         "sold_rate": 84.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2336,7 +2336,7 @@
         "pending": 26,
         "sold_rate": 14.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2358,7 +2358,7 @@
         "pending": 1,
         "sold_rate": 73.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2380,7 +2380,7 @@
         "pending": 12,
         "sold_rate": 71.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2446,7 +2446,7 @@
         "pending": 34,
         "sold_rate": 37.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2468,7 +2468,7 @@
         "pending": 1,
         "sold_rate": 94.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2490,7 +2490,7 @@
         "pending": 1,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2556,7 +2556,7 @@
         "pending": 143,
         "sold_rate": 59.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2578,7 +2578,7 @@
         "pending": 37,
         "sold_rate": 37.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2600,7 +2600,7 @@
         "pending": 2,
         "sold_rate": 87.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "sales_suspended",
       "sell_status_cn": "暫停銷售",
       "is_suspended": true,
@@ -2622,7 +2622,7 @@
         "pending": 57,
         "sold_rate": 62.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2688,7 +2688,7 @@
         "pending": 5,
         "sold_rate": 91.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2732,7 +2732,7 @@
         "pending": 102,
         "sold_rate": 13.6
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2754,7 +2754,7 @@
         "pending": 0,
         "sold_rate": 99.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "sales_suspended",
       "sell_status_cn": "暫停銷售",
       "is_suspended": true,
@@ -2842,7 +2842,7 @@
         "pending": 17,
         "sold_rate": 61.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2864,7 +2864,7 @@
         "pending": 2,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -2886,7 +2886,7 @@
         "pending": 5,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "sales_suspended",
       "sell_status_cn": "暫停銷售",
       "is_suspended": true,
@@ -2952,7 +2952,7 @@
         "pending": 6,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -3011,14 +3011,14 @@
       "file_size_kb": 40.6,
       "stats": {
         "total": 463,
-        "sold": 166,
-        "sale": 79,
+        "sold": 167,
+        "sale": 78,
         "priced": 0,
         "stopped": 0,
         "pending": 218,
-        "sold_rate": 35.9
+        "sold_rate": 36.1
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3040,7 +3040,7 @@
         "pending": 80,
         "sold_rate": 19.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3062,7 +3062,7 @@
         "pending": 34,
         "sold_rate": 36.8
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3074,7 +3074,7 @@
       "region": "港岛",
       "district": "香港仔及鸭脷洲",
       "filename": "港岛-香港仔及鸭脷洲-弦岸.xlsx",
-      "file_size_kb": 16.0,
+      "file_size_kb": 15.3,
       "stats": {
         "total": 105,
         "sold": 78,
@@ -3084,7 +3084,7 @@
         "pending": 5,
         "sold_rate": 74.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3106,7 +3106,7 @@
         "pending": 6,
         "sold_rate": 98.2
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3140,7 +3140,7 @@
       "region": "港岛",
       "district": "香港仔及鸭脷洲",
       "filename": "港岛-香港仔及鸭脷洲-海盈山第4A期.xlsx",
-      "file_size_kb": 42.0,
+      "file_size_kb": 41.9,
       "stats": {
         "total": 432,
         "sold": 360,
@@ -3150,7 +3150,7 @@
         "pending": 45,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3165,14 +3165,14 @@
       "file_size_kb": 32.4,
       "stats": {
         "total": 368,
-        "sold": 85,
-        "sale": 46,
+        "sold": 86,
+        "sale": 45,
         "priced": 0,
         "stopped": 0,
         "pending": 237,
-        "sold_rate": 23.1
+        "sold_rate": 23.4
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3194,7 +3194,7 @@
         "pending": 0,
         "sold_rate": 95.5
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3238,7 +3238,7 @@
         "pending": 38,
         "sold_rate": 0.0
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "coming_soon",
       "sell_status_cn": "即將發售",
       "is_suspended": false,
@@ -3260,7 +3260,7 @@
         "pending": 24,
         "sold_rate": 65.9
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3304,7 +3304,7 @@
         "pending": 143,
         "sold_rate": 36.6
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3326,7 +3326,7 @@
         "pending": 91,
         "sold_rate": 16.7
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "sales_suspended",
       "sell_status_cn": "暫停銷售",
       "is_suspended": true,
@@ -3348,7 +3348,7 @@
         "pending": 2,
         "sold_rate": 83.3
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
@@ -3370,7 +3370,7 @@
         "pending": 0,
         "sold_rate": 96.2
       },
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-07-24",
       "sell_status": "on_sale",
       "sell_status_cn": "出售中",
       "is_suspended": false,
